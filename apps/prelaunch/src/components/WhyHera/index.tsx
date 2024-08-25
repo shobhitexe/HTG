@@ -4,7 +4,7 @@ import Image from "next/image";
 const pointers = [
   {
     title: "100% Profit Splits",
-    desc: "Keep all your profits without sharing them. Hera Traders enjoy full profit splits, maximizing your earnings from every trade.",
+    desc: "Keep all your profits without sharing them. Hera Traders can enjoy full profit splits, maximizing your earnings from every trade.",
   },
   {
     title: "1 Step Challenges",
@@ -37,8 +37,8 @@ export default function WhyHera() {
         </GoldenText>
 
         <div className="text-center sm:text-lg text-base px-5">
-          Join a Community of Successful Traders Sand get Funded with right
-          tools and support.
+          Join a Community of Successful Traders and get Funded with right tools
+          and support.
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5 mt-5 px-5">

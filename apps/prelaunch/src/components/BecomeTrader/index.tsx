@@ -12,12 +12,12 @@ export default function BecomeTrader() {
         className=""
       />
       <div className="flex flex-col">
-        <GoldenText className="lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-3xl pt-3">
+        <GoldenText className="lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-3xl pt-3 max-sm:font-semibold">
           Become a <br />
           Hera Trader!
         </GoldenText>
-        <div className="max-w-md sm:text-base text-sm">
-          Join the Pre-Launch waitlist now to avail up to 50% discounts in the
+        <div className="max-w-md sm:text-lg xs:text-base text-sm">
+          Join the Pre-Launch waitlist now to avail up to 30% discounts in the
           pre-sale. Hop on with us on this amazing journey to revolutionize prop
           trading industry!
         </div>
