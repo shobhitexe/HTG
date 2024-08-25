@@ -14,6 +14,14 @@ const pointers = [
     title: "Superfast Payouts",
     desc: "Enjoy fast and efficient withdrawals with multiple options of payouts!",
   },
+  {
+    title: "In-person Events",
+    desc: "Join a community of like-minded traders at Hera Trading Group's in-person events held regularly!",
+  },
+  {
+    title: "Top Trader Rewards",
+    desc: "Win Awesome rewards by being the best trader at the firm and being at the top of the leaderboard every month!",
+  },
 ];
 
 export default function WhyHera() {
