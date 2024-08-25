@@ -19,13 +19,14 @@ export default function Navbar() {
             alt={"logo"}
             width={180}
             height={50}
+            className="sm:w-[180px] w-[150px]"
           />
         </Link>
         <div className="z-[10]">
           <Button
             variant={"golden"}
             size={"xl"}
-            className="text-black font-ClashGroteskMedium text-base"
+            className="text-black font-ClashGroteskMedium text-base sm:px-10 px-5 sm:h-10 h-8"
           >
             Join the Waitlist
           </Button>

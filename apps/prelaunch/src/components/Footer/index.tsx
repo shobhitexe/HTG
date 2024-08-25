@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
       <div className="bg-white/40 h-px w-full" />
 
-      <div className="text-Apricot text-sm flex items-center justify-between">
+      <div className="text-Apricot text-sm flex sm:flex-row flex-col text-center items-center justify-between">
         <div>Copyright © 2024 HeraTradingCapital. All Rights Reserved</div>
         <div>
           Terms & Conditions <span className="text-white">-</span> Privacy &

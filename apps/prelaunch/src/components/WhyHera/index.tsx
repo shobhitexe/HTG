@@ -18,9 +18,9 @@ const pointers = [
 
 export default function WhyHera() {
   return (
-    <section className="mt-20">
+    <section className="lg:mt-20 sm:mt-28 mt-20">
       <div className="relative w-full">
-        <div className="absolute z-0 bottom-1/3 bg-heraTextGradient bg-clip-text text-transparent font-Kugile text-center text-[20rem] w-full leading-relaxed">
+        <div className="absolute z-0 bottom-1/3 bg-heraTextGradient bg-clip-text text-transparent font-Kugile text-center lg:text-[18rem] md:text-[15rem] sm:text-[12rem] ss:text-[10rem] xs:text-[8rem] text-[5rem] w-full leading-relaxed">
           HERA
         </div>
         <Image
@@ -31,17 +31,17 @@ export default function WhyHera() {
           className="w-full relative z-10"
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-2 text-xl font-ClashGroteskRegular relative -top-10 z-10">
-        <GoldenText className="text-7xl leading-relaxed">
+      <div className="flex flex-col items-center justify-center sm:gap-2 text-xl font-ClashGroteskRegular relative -top-10 z-10">
+        <GoldenText className="lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-3xl text-center xs:py-3 py-1">
           Why Hera Trading Capital?
         </GoldenText>
 
-        <div>
+        <div className="text-center sm:text-lg text-base px-5">
           Join a Community of Successful Traders Sand get Funded with right
           tools and support.
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
+        <div className="flex flex-wrap items-center justify-center gap-5 mt-5 px-5">
           {pointers.map((item) => (
             <div
               key={item.title}
@@ -52,12 +52,14 @@ export default function WhyHera() {
                   background:
                     "radial-gradient(at center bottom, #FFB169 -100%, #070707 50%)",
                 }}
-                className="max-w-xl min-h-40 text-center bg-blackShade rounded-full py-5 px-20 flex flex-col justify-center"
+                className="lg:max-w-xl max-w-sm md:min-h-40 sm:min-h-32 min-h-24 text-center bg-blackShade rounded-full py-5 md:px-20 px-10 flex flex-col justify-center"
               >
-                <div className="text-Rajah text-3xl font-ClashGroteskMedium">
+                <div className="text-Rajah md:text-3xl text-2xl font-ClashGroteskMedium">
                   {item.title}
                 </div>
-                <div className="text-base">{item.desc}</div>
+                <div className="md:text-base sm:text-sm text-xs">
+                  {item.desc}
+                </div>
               </div>
             </div>
           ))}
