@@ -4,7 +4,25 @@ import type { Config } from "tailwindcss";
 const config: Omit<Config, "content"> = {
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        ClashGroteskExtralight: "ClashGrotesk-Extralight",
+        ClashGroteskLight: "ClashGrotesk-Light",
+        ClashGroteskRegular: "ClashGrotesk-Regular",
+        ClashGroteskMedium: "ClashGrotesk-Medium",
+        ClashGroteskSemiBold: "ClashGrotesk-SemiBold",
+        ClashGroteskBold: "ClashGrotesk-Bold",
+        ClashGroteskVariable: "ClashGrotesk-Variable",
+        Kugile: "Kugile",
+      },
+
+      backgroundImage: {
+        goldenButtonGradient:
+          "linear-gradient(90deg, #FFB169 0%, #593F26 100%)",
+        goldenTextGradient:
+          "linear-gradient(99.06deg, #FFB169 23.07%, #996A3F 76.93%)",
+        heraTextGradient: "linear-gradient(180deg, #2F2924 0%, #070707 79.49%)",
+      },
+
       screens: {
         xs: "480px",
         ss: "620px",
@@ -14,7 +32,14 @@ const config: Omit<Config, "content"> = {
         xl: "1700px",
       },
 
-      colors: {},
+      colors: {
+        blackShade: "#0F0F0F",
+        vanilla: "#D0C0B1",
+        ChineseBlack: "#131313",
+        Rajah: "#F6AB65",
+        RawUmber: "#856343",
+        Apricot: "#FFB169",
+      },
 
       borderRadius: {},
 

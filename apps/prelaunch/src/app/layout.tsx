@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "@repo/ui/styles.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Footer, Navbar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Hera Trading Capital",
-  description: "",
+  description:
+    "Hera Trading Group, the Epitome of Trading like the Gods, with Capital of Up To $200,000.",
 };
 
 export default function RootLayout({
@@ -17,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
