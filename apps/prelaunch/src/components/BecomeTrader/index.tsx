@@ -16,7 +16,7 @@ export default function BecomeTrader() {
           Become a <br />
           Hera Trader!
         </GoldenText>
-        <div className="max-w-md sm:text-lg xs:text-base text-sm">
+        <div className="max-w-md sm:text-lg xs:text-lg text-base">
           Join the Pre-Launch waitlist now to avail up to 30% discounts in the
           pre-sale. Hop on with us on this amazing journey to revolutionize prop
           trading industry!

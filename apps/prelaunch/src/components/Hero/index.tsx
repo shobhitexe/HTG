@@ -1,5 +1,6 @@
 import { Button, GoldenText, MailIcon } from "@repo/ui";
 import Image from "next/image";
+import EmailForm from "../EmailForm";
 
 export default function Hero() {
   return (
@@ -20,24 +21,11 @@ export default function Hero() {
             Trading Limits
           </GoldenText>
           <p className="font-ClashGroteskRegular lg:text-xl text-lg max-w-md">
-            Join a Community of Successful Traders Sand get Funded with right
+            Join a Community of Successful Traders and get Funded with right
             tools and support.
           </p>
 
-          <div className="relative flex items-center bg-ChineseBlack py-1 px-5 rounded-sm w-full md:max-w-sm max-w-xs">
-            <MailIcon className="w-5 h-5" />
-            <input
-              className="bg-transparent md:py-3 py-2 px-2 focus:outline-none"
-              placeholder="Enter your Email"
-            />
-          </div>
-
-          <Button
-            variant={"golden"}
-            className="text-black w-full md:max-w-sm max-w-xs text-lg font-ClashGroteskMedium"
-          >
-            Join the Waitlist
-          </Button>
+          <EmailForm />
         </div>
 
         <Image

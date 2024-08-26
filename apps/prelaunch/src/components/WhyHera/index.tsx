@@ -20,7 +20,7 @@ const pointers = [
   },
   {
     title: "Top Trader Rewards",
-    desc: "Win Awesome rewards by being the best trader at the firm and being at the top of the leaderboard every month!",
+    desc: "Win awesome rewards by being the best trader at the firm and being at the top of the leaderboard every month!",
   },
 ];
 
