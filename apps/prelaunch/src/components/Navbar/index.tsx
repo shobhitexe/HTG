@@ -22,7 +22,7 @@ export default function Navbar() {
             className="sm:w-[180px] w-[150px]"
           />
         </Link>
-        <div className="z-[10]">
+        <Link href={"#waitlist-form"} className="z-[10]">
           <Button
             variant={"golden"}
             size={"xl"}
@@ -30,7 +30,7 @@ export default function Navbar() {
           >
             Join the Waitlist
           </Button>
-        </div>
+        </Link>
       </div>
     </header>
   );

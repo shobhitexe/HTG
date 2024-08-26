@@ -4,7 +4,10 @@ import EmailForm from "../EmailForm";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col sm:gap-3 gap-0 mt-24 sm:px-10 px-5">
+    <section
+      id="waitlist-form"
+      className="flex flex-col sm:gap-3 gap-0 mt-24 sm:px-10 px-5"
+    >
       <div className="text-center bg-[#14100C] w-fit mx-auto sm:px-10 px-5 py-2 rounded-3xl relative sm:text-base text-sm">
         <div className="absolute inset-x-0 h-px w-4/5 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-white/40 to-transparent" />
         LAUNCHING SOON

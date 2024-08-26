@@ -1,5 +1,6 @@
 import { Button, GoldenText } from "@repo/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BecomeTrader() {
   return (
@@ -21,13 +22,15 @@ export default function BecomeTrader() {
           pre-sale. Hop on with us on this amazing journey to revolutionize prop
           trading industry!
         </div>
-        <Button
-          variant={"golden"}
-          size={"xl"}
-          className="text-black font-bold w-fit mt-5 text-base"
-        >
-          Join the Waitlist
-        </Button>
+        <Link href={"#waitlist-form"}>
+          <Button
+            variant={"golden"}
+            size={"xl"}
+            className="text-black font-bold w-fit mt-5 text-base"
+          >
+            Join the Waitlist
+          </Button>
+        </Link>
       </div>
     </div>
   );

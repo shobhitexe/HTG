@@ -1,7 +1,8 @@
 import BecomeTrader from "./BecomeTrader";
 import Community from "./Community";
+import Discord from "./Discord";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 
-export { Navbar, Hero, BecomeTrader, Community, Footer };
+export { Navbar, Hero, BecomeTrader, Community, Footer, Discord };

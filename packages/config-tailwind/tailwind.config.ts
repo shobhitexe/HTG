@@ -21,6 +21,7 @@ const config: Omit<Config, "content"> = {
         goldenTextGradient:
           "linear-gradient(99.06deg, #FFB169 23.07%, #996A3F 76.93%)",
         heraTextGradient: "linear-gradient(180deg, #2F2924 0%, #070707 79.49%)",
+        discordSectionBg: "linear-gradient(90deg, #FFB169 0%, #975110 100%)",
       },
 
       screens: {

@@ -1,4 +1,5 @@
 import { Button, GoldenText } from "@repo/ui";
+import Link from "next/link";
 
 export default function Community() {
   return (
@@ -14,13 +15,15 @@ export default function Community() {
         this revolutionary journey with us to reshape the prop trading industry!
       </div>
 
-      <Button
-        variant={"golden"}
-        size={"xl"}
-        className="text-black font-semibold w-fit mt-5 text-base"
-      >
-        Join the Waitlist
-      </Button>
+      <Link href={"#waitlist-form"}>
+        <Button
+          variant={"golden"}
+          size={"xl"}
+          className="text-black font-semibold w-fit mt-5 text-base"
+        >
+          Join the Waitlist
+        </Button>
+      </Link>
     </div>
   );
 }

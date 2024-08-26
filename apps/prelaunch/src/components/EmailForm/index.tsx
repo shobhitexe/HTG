@@ -25,6 +25,7 @@ export default function EmailForm() {
           placeholder="Enter your Email"
           type="email"
           name="email"
+          required
         />
       </div>
       <Button
