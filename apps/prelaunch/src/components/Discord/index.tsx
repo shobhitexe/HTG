@@ -13,7 +13,7 @@ export default function Discord() {
         </div>
 
         <Link
-          href={"https://discord.gg/d9aHpVjFpr"}
+          href={"https://discord.com/invite/cKuzhCUBud"}
           target="_blank"
           rel="noopener noreferrer"
           className={buttonVariants({
