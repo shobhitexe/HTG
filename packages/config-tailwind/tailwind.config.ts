@@ -22,6 +22,14 @@ const config: Omit<Config, "content"> = {
           "linear-gradient(99.06deg, #FFB169 23.07%, #996A3F 76.93%)",
         heraTextGradient: "linear-gradient(180deg, #2F2924 0%, #070707 79.49%)",
         discordSectionBg: "linear-gradient(90deg, #FFB169 0%, #975110 100%)",
+        bronzeButtonGradient:
+          "linear-gradient(90deg, #FFB169 0%, #E9903D 100%)",
+
+        silverTextGradient:
+          "linear-gradient(94.77deg, #FFFFFF 16.46%, #999999 83.54%)",
+
+        goldButtonBg: "url('/images/buttons/gold.png')",
+        silverbuttonBg: "url('/images/buttons/silver.png')",
       },
 
       screens: {
@@ -40,6 +48,9 @@ const config: Omit<Config, "content"> = {
         Rajah: "#F6AB65",
         RawUmber: "#856343",
         Apricot: "#FFB169",
+        SilverFoil: "#B0B0B0",
+        Gray: "#818181",
+        RaisinBlack: "#232323",
       },
 
       borderRadius: {},
