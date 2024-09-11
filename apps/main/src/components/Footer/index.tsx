@@ -55,7 +55,7 @@ const socialMediaArr = [
 
 export default function Footer() {
   return (
-    <div className="bg-footerBg bg-cover mt-32 py-10 z-10 relative text-Gray">
+    <div className="bg-footerBg bg-cover py-10 z-10 relative text-Gray">
       <div className="w-[85%] mx-auto flex flex-col gap-7">
         <div className="flex md:flex-row flex-col max-md:gap-5 justify-between">
           <div className="flex flex-col gap-2 sm:text-[15px] text-[14px]">

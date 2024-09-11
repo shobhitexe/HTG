@@ -8,7 +8,7 @@ export const navLinks = [
   { title: "About Us", link: "" },
   { title: "Affiliate", link: "" },
   { title: "FAQs", link: "" },
-  { title: "Contact Us", link: "" },
+  { title: "Contact Us", link: "/contact-us" },
 ];
 
 export default function Navbar() {

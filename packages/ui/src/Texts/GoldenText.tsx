@@ -11,8 +11,8 @@ export default function GoldenText({
   return (
     <div
       className={cn(
-        className,
-        "bg-goldenTextGradient bg-clip-text text-transparent font-Kugile"
+        "bg-goldenTextGradient bg-clip-text text-transparent font-Kugile",
+        className
       )}
     >
       {children}

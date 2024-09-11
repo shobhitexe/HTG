@@ -20,6 +20,7 @@ export default function Home() {
       <FundingJourney />
       <HowItWorks />
       <Community />
+      <div className="mt-32" />
     </main>
   );
 }

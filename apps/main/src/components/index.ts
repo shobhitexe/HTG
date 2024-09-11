@@ -6,6 +6,7 @@ import FundingJourney from "./FundingJourney";
 import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Navbar from "./Navbar";
+import PageHeading from "./PageHeading";
 import TableComponent from "./Table";
 import WhyHera from "./WhyHera";
 
@@ -20,4 +21,5 @@ export {
   FundingJourney,
   HowItWorks,
   WhyHera,
+  PageHeading,
 };
