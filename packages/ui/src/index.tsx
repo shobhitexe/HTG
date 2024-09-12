@@ -20,6 +20,13 @@ import {
 import MenuIcon from "./Icons/MenuIcon";
 import CrossIcon from "./Icons/CrossIcon";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./Accordian";
+
 export {
   Button,
   GoldenText,
@@ -40,4 +47,8 @@ export {
   TableCaption,
   MenuIcon,
   CrossIcon,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 };
