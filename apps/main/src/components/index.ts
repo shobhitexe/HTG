@@ -1,5 +1,6 @@
 import Community from "./Community";
 import Discord from "./Discord";
+import EvalTable from "./EvalTable";
 import Events from "./Events";
 import Footer from "./Footer";
 import FundingJourney from "./FundingJourney";
@@ -22,4 +23,5 @@ export {
   HowItWorks,
   WhyHera,
   PageHeading,
+  EvalTable,
 };

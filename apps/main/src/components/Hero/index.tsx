@@ -23,7 +23,7 @@ export default function Hero() {
             height={20}
             className="md:w-[350px] sm:w-[250px] w-[200px]"
           />
-          <GoldenText className="font-Kugile lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold md:py-6 sm:py-4 py-3">
+          <GoldenText className="font-Kugile lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold sm:py-6 py-3">
             Go Beyond your
             <br />
             Trading Limits

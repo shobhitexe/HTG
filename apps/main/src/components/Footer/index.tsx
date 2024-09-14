@@ -95,7 +95,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="border-purple/60 border-b"></div>
+        <div className="border-Apricot/60 border-b"></div>
         <div className="flex ss:flex-row flex-col ss:items-center justify-between gap-5">
           <div>
             <div className="text-footerBrightPurple text-[25px]">
@@ -127,7 +127,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="border-purple/60 border-b"></div>
+        <div className="border-Apricot/60 border-b"></div>
         <div>
           <div className="text-footerBrightPurple text-[25px]">
             Risk Warning
@@ -142,7 +142,7 @@ export default function Footer() {
             view of available financial resources and level of knowledge.
           </div>
         </div>
-        <div className="border-purple/60 border-b"></div>
+        <div className="border-Apricot/60 border-b"></div>
         <div className="text-footerPurple text-center ss:text-[15px] text-[13px]">
           ©HeraTradingCapital All rights reserved
         </div>

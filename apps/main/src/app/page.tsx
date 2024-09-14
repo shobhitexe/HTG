@@ -1,6 +1,7 @@
 import {
   Community,
   Discord,
+  EvalTable,
   Events,
   FundingJourney,
   Hero,
@@ -17,6 +18,7 @@ export default function Home() {
       <WhyHera />
       <Events />
       <TableComponent />
+      <EvalTable />
       <FundingJourney />
       <HowItWorks />
       <Community />

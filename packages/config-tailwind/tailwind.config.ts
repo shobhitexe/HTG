@@ -27,6 +27,8 @@ const config: Omit<Config, "content"> = {
 
         silverTextGradient:
           "linear-gradient(94.77deg, #FFFFFF 16.46%, #999999 83.54%)",
+        pricingButtonGradient:
+          "linear-gradient(104.89deg, #FFB169 20.88%, #CD7B28 79.12%)",
 
         goldButtonBg: "url('/images/buttons/gold.png')",
         silverbuttonBg: "url('/images/buttons/silver.png')",
@@ -51,6 +53,7 @@ const config: Omit<Config, "content"> = {
         SilverFoil: "#B0B0B0",
         Gray: "#818181",
         RaisinBlack: "#232323",
+        AmericanSilver: "#D1D1D1",
       },
 
       borderRadius: {},
