@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 export const navLinks = [
   { title: "Evaluations", link: "" },
   { title: "About Us", link: "" },
-  { title: "Affiliate", link: "" },
+  { title: "Affiliate", link: "/affiliate" },
   { title: "FAQs", link: "/faqs" },
   { title: "Contact Us", link: "/contact-us" },
 ];
