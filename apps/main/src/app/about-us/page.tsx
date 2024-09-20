@@ -151,7 +151,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="sm:mt-20 mt-10 flex sm:flex-row flex-col-reverse items-start justify-around w-full sm:px-10 px-5">
+      <div className="sm:mt-20 mt-10 flex max-sm:flex-col-reverse items-start justify-around w-full sm:px-10 px-5">
         <div className="flex flex-col gap-10">
           <h1 className="text-Apricot md:text-6xl sm:text-5xl text-4xl font-Kugile">
             The Power of <br /> Networking
