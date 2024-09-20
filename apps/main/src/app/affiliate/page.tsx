@@ -104,11 +104,11 @@ export default function page() {
 
       <div className="flex sm:flex-row flex-col items-center justify-center sm:gap-10 gap-5 w-full pb-20 px-5">
         <div className="basis-1/3">
-          <div className="text-Apricot font-Kugile sm:text-5xl text-4xl">
+          <div className="text-Apricot font-Kugile md:text-6xl sm:text-5xl text-4xl">
             Become an
             <br /> HTC Partner
           </div>
-          <div className="text-AmericanSilver max-w-md sm:text-xl text-lg font-ClashGroteskLight">
+          <div className="text-AmericanSilver max-w-md md:text-2xl sm:text-xl text-lg font-ClashGroteskLight">
             At HeraTradingCapital, we're pioneering a new Hera in prop trading
             with our innovative A-Booking program.
           </div>

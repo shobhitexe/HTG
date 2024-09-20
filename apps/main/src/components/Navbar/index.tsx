@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 export const navLinks = [
   { title: "Evaluations", link: "" },
-  { title: "About Us", link: "" },
+  { title: "About Us", link: "/about-us" },
   { title: "Affiliate", link: "/affiliate" },
   { title: "FAQs", link: "/faqs" },
   { title: "Contact Us", link: "/contact-us" },
@@ -13,7 +13,7 @@ export const navLinks = [
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 z-20 mx-auto flex w-full items-center justify-between py-3 sm:px-10 px-5">
+    <header className="fixed top-0 z-40 mx-auto flex w-full items-center justify-between py-3 sm:px-10 px-5">
       <div className="pointer-events-none absolute inset-0  z-[1] h-[20vh] backdrop-blur-[0.0625px] [mask-image:linear-gradient(0deg,transparent_0%,#000_12.5%,#000_25%,transparent_37.5%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[2] h-[20vh] backdrop-blur-[0.125px] [mask-image:linear-gradient(0deg,transparent_12.5%,#000_25%,#000_37.5%,transparent_50%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[3] h-[20vh] backdrop-blur-[0.25px] [mask-image:linear-gradient(0deg,transparent_25%,#000_37.5%,#000_50%,transparent_62.5%)]"></div>
