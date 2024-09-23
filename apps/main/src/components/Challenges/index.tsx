@@ -197,7 +197,7 @@ export default function Challenges() {
             <div className="flex text-5xl gap-3">
               <div className="text-[#5A5A5A] relative">
                 <div className="h-1 bg-[#FF0F0F] w-full absolute top-1/2 -rotate-12" />
-                <div>$945</div>
+                <div> ${Math.round(finalPrice * 1.3)}</div>
               </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
