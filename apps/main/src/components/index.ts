@@ -1,3 +1,4 @@
+import Challenges from "./Challenges";
 import Community from "./Community";
 import Discord from "./Discord";
 import EvalTable from "./EvalTable";
@@ -26,4 +27,5 @@ export {
   PageHeading,
   EvalTable,
   Video,
+  Challenges,
 };
