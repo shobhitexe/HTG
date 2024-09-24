@@ -26,6 +26,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./Accordian";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 
 export {
   Button,
@@ -51,4 +52,8 @@ export {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
 };
