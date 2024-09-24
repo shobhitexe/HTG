@@ -8,6 +8,7 @@ import FundingJourney from "./FundingJourney";
 import Hero from "./Hero";
 import HowItWorks from "./HowItWorks";
 import Video from "./HowItWorks/Video";
+import Leaderboard from "./Leaderboard";
 import Navbar from "./Navbar";
 import PageHeading from "./PageHeading";
 import TableComponent from "./Table";
@@ -28,4 +29,5 @@ export {
   EvalTable,
   Video,
   Challenges,
+  Leaderboard,
 };

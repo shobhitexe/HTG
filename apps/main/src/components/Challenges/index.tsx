@@ -4,6 +4,20 @@ import { Button, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
 import { useState } from "react";
 
+const balanceArr = ["$5,000", "$10,000", "$25,000", "$50,000", "$100,000"];
+const initialDrawdownArr = [
+  "6%",
+  "7%",
+  "8%",
+  "9%",
+  "10%",
+  "11%",
+  "12%",
+  "13%",
+  "14%",
+];
+const payoutShareArr = ["40%", "50%", "60%", "70%", "80%", "90%", "100%"];
+
 export default function Challenges() {
   const [config, setConfig] = useState({
     step: 0,
@@ -14,7 +28,7 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [25, 52, 120, 188, 324];
+  const basePrices = [30.84, 56, 119.62, 183.17, 332];
 
   function calculateFinalPrice(
     balance: number,
@@ -23,8 +37,8 @@ export default function Challenges() {
     step: number
   ) {
     const basePrice = basePrices[balance] || 0;
-    const drawdownIncrement = drawdownStep * 0.1 * basePrice;
-    const shareIncrement = shareStep * 0.11 * basePrice;
+    const drawdownIncrement = drawdownStep * 0.055 * basePrice;
+    const shareIncrement = shareStep * 0.0975 * basePrice;
     const stepIncrement = step === 0 ? 0 : 0.12 * basePrice;
 
     return basePrice + drawdownIncrement + shareIncrement + stepIncrement;
@@ -124,19 +138,17 @@ export default function Challenges() {
               Select your balance:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {["$5,000", "$10,000", "$25,000", "$50,000", "$100,000"].map(
-                (item, idx) => (
-                  <Button
-                    key={idx}
-                    variant={idx === config.balance ? "bronze" : "secondary"}
-                    onClick={() =>
-                      setConfig((prev) => ({ ...prev, balance: idx }))
-                    }
-                  >
-                    {item}
-                  </Button>
-                )
-              )}
+              {balanceArr.map((item, idx) => (
+                <Button
+                  key={idx}
+                  variant={idx === config.balance ? "bronze" : "secondary"}
+                  onClick={() =>
+                    setConfig((prev) => ({ ...prev, balance: idx }))
+                  }
+                >
+                  {item}
+                </Button>
+              ))}
             </div>
           </div>
 
@@ -148,19 +160,17 @@ export default function Challenges() {
               Select initial balance drawdown:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {["6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%"].map(
-                (item, idx) => (
-                  <Button
-                    key={idx}
-                    variant={idx === config.drawdown ? "bronze" : "secondary"}
-                    onClick={() =>
-                      setConfig((prev) => ({ ...prev, drawdown: idx }))
-                    }
-                  >
-                    {item}
-                  </Button>
-                )
-              )}
+              {initialDrawdownArr.map((item, idx) => (
+                <Button
+                  key={idx}
+                  variant={idx === config.drawdown ? "bronze" : "secondary"}
+                  onClick={() =>
+                    setConfig((prev) => ({ ...prev, drawdown: idx }))
+                  }
+                >
+                  {item}
+                </Button>
+              ))}
             </div>
           </div>
 
@@ -172,19 +182,15 @@ export default function Challenges() {
               Select payout share:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {["40%", "50%", "60%", "70%", "80%", "90%", "100%"].map(
-                (item, idx) => (
-                  <Button
-                    key={idx}
-                    variant={idx === config.share ? "bronze" : "secondary"}
-                    onClick={() =>
-                      setConfig((prev) => ({ ...prev, share: idx }))
-                    }
-                  >
-                    {item}
-                  </Button>
-                )
-              )}
+              {payoutShareArr.map((item, idx) => (
+                <Button
+                  key={idx}
+                  variant={idx === config.share ? "bronze" : "secondary"}
+                  onClick={() => setConfig((prev) => ({ ...prev, share: idx }))}
+                >
+                  {item}
+                </Button>
+              ))}
             </div>
           </div>
         </div>
@@ -206,11 +212,48 @@ export default function Challenges() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-1 w-full">
+          <div className="flex flex-col gap-1.5 w-full">
             <Seperator />
-            One-Time Fee
+            <div className="flex items-center justify-between">
+              <div>Platform :</div> <div className="text-RoyalOrange">MTR</div>
+            </div>
             <Seperator />
-            100% Refund
+            <div className="flex items-center justify-between">
+              <div>Account Currency :</div>{" "}
+              <div className="text-RoyalOrange">USD</div>
+            </div>
+            <Seperator />
+            <div className="flex items-center justify-between">
+              <div>Balance :</div>
+              <div className="text-RoyalOrange">
+                {balanceArr[config.balance]}
+              </div>
+            </div>
+            <Seperator />
+            <div className="flex items-center justify-between">
+              <div>Daily Drawdown :</div>
+              <div className="text-RoyalOrange">4% ($4,000)</div>
+            </div>
+            <Seperator />
+            <div className="flex items-center justify-between">
+              <div>Initial Balance DD :</div>
+              <div className="text-RoyalOrange">
+                {initialDrawdownArr[config.drawdown]}
+              </div>
+            </div>
+            <Seperator />
+            <div className="flex items-center justify-between">
+              <div>Profit Target :</div>
+              <div className="text-RoyalOrange">10% / 4%</div>
+            </div>
+            <Seperator />
+            <div className="flex items-center justify-between">
+              <div>Payout Share :</div>
+              <div className="text-RoyalOrange">
+                {payoutShareArr[config.share]}
+              </div>
+            </div>
+
             <Seperator />
           </div>
 
@@ -223,17 +266,18 @@ export default function Challenges() {
           />
 
           <div className="flex flex-col gap-5">
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
               <div className="text-RoyalOrange text-3xl">Zeus Challenge</div>
               <div className="max-w-sm font-ClashGroteskLight text-lg">
                 The Challenge is your initial dive into the becoming an Hera
                 Trader. Prove your trading skills, hit the profit target,
                 maintain discipline, and showcase responsible risk management.
               </div>
-            </div>
+            </div> */}
 
             <Button
               variant={"bronze"}
+              size={"xl"}
               className="text-black font-ClashGroteskSemiBold w-fit mx-auto"
             >
               Get Started

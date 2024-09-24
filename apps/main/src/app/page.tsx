@@ -7,6 +7,7 @@ import {
   FundingJourney,
   Hero,
   HowItWorks,
+  Leaderboard,
   TableComponent,
   WhyHera,
 } from "@/components";
@@ -17,7 +18,8 @@ export default function Home() {
       <Hero />
       <Discord />
       <WhyHera />
-      <Events />
+      {/* <Events /> */}
+      <Leaderboard />
       <TableComponent />
       <Challenges />
       <EvalTable />

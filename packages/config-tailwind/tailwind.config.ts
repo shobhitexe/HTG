@@ -24,6 +24,8 @@ const config: Omit<Config, "content"> = {
         discordSectionBg: "linear-gradient(90deg, #FFB169 0%, #975110 100%)",
         bronzeButtonGradient:
           "linear-gradient(90deg, #FFB169 0%, #E9903D 100%)",
+        leaderBorderHeaderGradient:
+          "linear-gradient(180deg, #F0A764 0%, #96693F 100%)",
 
         silverTextGradient:
           "linear-gradient(94.77deg, #FFFFFF 16.46%, #999999 83.54%)",

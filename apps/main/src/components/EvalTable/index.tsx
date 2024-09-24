@@ -7,7 +7,6 @@ import {
   TableRow,
   TableCell,
 } from "@repo/ui";
-import Image from "next/image";
 
 const TableData = [
   {

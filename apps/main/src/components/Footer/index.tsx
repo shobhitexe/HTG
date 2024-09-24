@@ -68,7 +68,7 @@ export default function Footer() {
             />
             <h1 className="text-footerPurple sm:text-base text-sm max-w-xs">
               Embark on a Profitable Journey : Elevate Your Trading with Our
-              Forex Proprietary Firm.
+              Proprietary Firm.
             </h1>
           </div>
           <div className="flex items-start flex-wrap lg:gap-32 sm:gap-10 gap-5">
