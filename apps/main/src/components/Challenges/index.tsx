@@ -5,6 +5,16 @@ import Image from "next/image";
 import { useState } from "react";
 
 const balanceArr = ["$5,000", "$10,000", "$25,000", "$50,000", "$100,000"];
+
+const balanceArrThreeStep = [
+  "$10,000",
+  "$25,000",
+  "$50,000",
+  "$100,000",
+  "$200,000",
+  "$400,000",
+];
+
 const initialDrawdownArr = [
   "6%",
   "7%",
@@ -28,27 +38,29 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [30.84, 56, 119.62, 183.17, 332];
+  const basePrices = [29, 60, 132, 199, 352];
+
+  const basePricesThreeStep = [29, 77, 120, 212, 358, 720];
 
   function calculateFinalPrice(
     balance: number,
     drawdownStep: number,
-    shareStep: number,
-    step: number
+    shareStep: number
   ) {
-    const basePrice = basePrices[balance] || 0;
+    const basePrice =
+      config.step !== 2
+        ? basePrices[balance] || 0
+        : basePricesThreeStep[balance] || 0;
     const drawdownIncrement = drawdownStep * 0.055 * basePrice;
     const shareIncrement = shareStep * 0.0975 * basePrice;
-    const stepIncrement = step === 0 ? 0 : 0.12 * basePrice;
 
-    return basePrice + drawdownIncrement + shareIncrement + stepIncrement;
+    return basePrice + drawdownIncrement + shareIncrement;
   }
 
   const finalPrice = calculateFinalPrice(
     config.balance,
     config.drawdown,
-    config.share,
-    config.step
+    config.share
   );
 
   return (
@@ -138,61 +150,68 @@ export default function Challenges() {
               Select your balance:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {balanceArr.map((item, idx) => (
-                <Button
-                  key={idx}
-                  variant={idx === config.balance ? "bronze" : "secondary"}
-                  onClick={() =>
-                    setConfig((prev) => ({ ...prev, balance: idx }))
-                  }
-                >
-                  {item}
-                </Button>
-              ))}
+              {(config.step !== 2 ? balanceArr : balanceArrThreeStep).map(
+                (item, idx) => (
+                  <Button
+                    key={idx}
+                    variant={idx === config.balance ? "bronze" : "secondary"}
+                    onClick={() =>
+                      setConfig((prev) => ({ ...prev, balance: idx }))
+                    }
+                  >
+                    {item}
+                  </Button>
+                )
+              )}
             </div>
           </div>
+          {config.step !== 0 && (
+            <>
+              <div className="flex flex-col gap-2">
+                <div>
+                  <span className="font-ClashGroteskMedium text-RoyalOrange">
+                    4.
+                  </span>{" "}
+                  Select initial balance drawdown:
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {initialDrawdownArr.map((item, idx) => (
+                    <Button
+                      key={idx}
+                      variant={idx === config.drawdown ? "bronze" : "secondary"}
+                      onClick={() =>
+                        setConfig((prev) => ({ ...prev, drawdown: idx }))
+                      }
+                    >
+                      {item}
+                    </Button>
+                  ))}
+                </div>
+              </div>
 
-          <div className="flex flex-col gap-2">
-            <div>
-              <span className="font-ClashGroteskMedium text-RoyalOrange">
-                4.
-              </span>{" "}
-              Select initial balance drawdown:
-            </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              {initialDrawdownArr.map((item, idx) => (
-                <Button
-                  key={idx}
-                  variant={idx === config.drawdown ? "bronze" : "secondary"}
-                  onClick={() =>
-                    setConfig((prev) => ({ ...prev, drawdown: idx }))
-                  }
-                >
-                  {item}
-                </Button>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <div>
-              <span className="font-ClashGroteskMedium text-RoyalOrange">
-                5.
-              </span>{" "}
-              Select payout share:
-            </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              {payoutShareArr.map((item, idx) => (
-                <Button
-                  key={idx}
-                  variant={idx === config.share ? "bronze" : "secondary"}
-                  onClick={() => setConfig((prev) => ({ ...prev, share: idx }))}
-                >
-                  {item}
-                </Button>
-              ))}
-            </div>
-          </div>
+              <div className="flex flex-col gap-2">
+                <div>
+                  <span className="font-ClashGroteskMedium text-RoyalOrange">
+                    5.
+                  </span>{" "}
+                  Select payout share:
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {payoutShareArr.map((item, idx) => (
+                    <Button
+                      key={idx}
+                      variant={idx === config.share ? "bronze" : "secondary"}
+                      onClick={() =>
+                        setConfig((prev) => ({ ...prev, share: idx }))
+                      }
+                    >
+                      {item}
+                    </Button>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="flex flex-col items-center basis-1/4 bg-[#0D0D0D] justify-around gap-5 border border-white/10 rounded-2xl relative p-10">
@@ -226,7 +245,9 @@ export default function Challenges() {
             <div className="flex items-center justify-between">
               <div>Balance :</div>
               <div className="text-RoyalOrange">
-                {balanceArr[config.balance]}
+                {config.step !== 2
+                  ? balanceArr[config.balance]
+                  : balanceArrThreeStep[config.balance]}
               </div>
             </div>
             <Seperator />

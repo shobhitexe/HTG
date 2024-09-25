@@ -1,16 +1,5 @@
 import { Heading } from "@repo/ui";
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@repo/ui";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@repo/ui";
 import HTCone from "./HTCone";
 import HTCPro from "./HTCPro";
 
