@@ -4,7 +4,15 @@ import { Button, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
 import { useState } from "react";
 
-const balanceArr = ["$5,000", "$10,000", "$25,000", "$50,000", "$100,000"];
+const balanceArr = ["$10,000", "$25,000", "$50,000", "$100,000", "$200,000"];
+
+const balanceArrTwoStep = [
+  "$5,000",
+  "$10,000",
+  "$25,000",
+  "$50,000",
+  "$100,000",
+];
 
 const balanceArrThreeStep = [
   "$10,000",
@@ -38,7 +46,9 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [29, 60, 132, 199, 352];
+  const basePrices = [51, 110, 220, 390, 790];
+
+  const basePricesTwoStep = [29, 60, 132, 199, 352];
 
   const basePricesThreeStep = [29, 77, 120, 212, 358, 720];
 
@@ -48,9 +58,11 @@ export default function Challenges() {
     shareStep: number
   ) {
     const basePrice =
-      config.step !== 2
+      config.step === 0
         ? basePrices[balance] || 0
-        : basePricesThreeStep[balance] || 0;
+        : config.step === 1
+          ? basePricesTwoStep[balance] || 0
+          : basePricesThreeStep[balance] || 0;
     const drawdownIncrement = drawdownStep * 0.055 * basePrice;
     const shareIncrement = shareStep * 0.0975 * basePrice;
 
@@ -150,19 +162,22 @@ export default function Challenges() {
               Select your balance:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {(config.step !== 2 ? balanceArr : balanceArrThreeStep).map(
-                (item, idx) => (
-                  <Button
-                    key={idx}
-                    variant={idx === config.balance ? "bronze" : "secondary"}
-                    onClick={() =>
-                      setConfig((prev) => ({ ...prev, balance: idx }))
-                    }
-                  >
-                    {item}
-                  </Button>
-                )
-              )}
+              {(config.step === 0
+                ? balanceArr
+                : config.step === 1
+                  ? balanceArrTwoStep
+                  : balanceArrThreeStep
+              ).map((item, idx) => (
+                <Button
+                  key={idx}
+                  variant={idx === config.balance ? "bronze" : "secondary"}
+                  onClick={() =>
+                    setConfig((prev) => ({ ...prev, balance: idx }))
+                  }
+                >
+                  {item}
+                </Button>
+              ))}
             </div>
           </div>
           {config.step !== 0 && (
@@ -245,9 +260,11 @@ export default function Challenges() {
             <div className="flex items-center justify-between">
               <div>Balance :</div>
               <div className="text-RoyalOrange">
-                {config.step !== 2
+                {config.step === 0
                   ? balanceArr[config.balance]
-                  : balanceArrThreeStep[config.balance]}
+                  : config.step === 1
+                    ? balanceArrTwoStep[config.balance]
+                    : balanceArrThreeStep[config.balance]}
               </div>
             </div>
             <Seperator />
