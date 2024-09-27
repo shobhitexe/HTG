@@ -2,7 +2,7 @@
 
 import { Button, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const balanceArr = ["$10,000", "$25,000", "$50,000", "$100,000", "$200,000"];
 
@@ -57,6 +57,10 @@ export default function Challenges() {
     drawdownStep: number,
     shareStep: number
   ) {
+    if (config.step === 0) {
+      return basePrices[balance] || 0;
+    }
+
     const basePrice =
       config.step === 0
         ? basePrices[balance] || 0
@@ -74,6 +78,14 @@ export default function Challenges() {
     config.drawdown,
     config.share
   );
+
+  useEffect(() => {
+    if (config.step === 0) {
+      setConfig((prev) => ({ ...prev, share: 4, drawdown: 0 }));
+    } else {
+      setConfig((prev) => ({ ...prev, share: 0 }));
+    }
+  }, [config.step]);
 
   return (
     <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col gap-5 items-center px-5 text-center">
