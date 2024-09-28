@@ -344,7 +344,9 @@ export default function Challenges() {
             <Seperator />
             <div className="flex items-center justify-between">
               <div>Profit Target :</div>
-              <div className="text-RoyalOrange">10% / 4%</div>
+              <div className="text-RoyalOrange">
+                {config.step === 0 ? "9%" : "10% / 4%"}
+              </div>
             </div>
             <Seperator />
             <div className="flex items-center justify-between">
