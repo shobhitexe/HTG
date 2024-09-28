@@ -54,7 +54,7 @@ export default function Challenges() {
 
   const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
 
-  const shareIncrementArr = [4, 3.7, 7.7, 11.5, 20, 40.3];
+  const shareIncrementArr = [4, 7.4, 15.4, 23, 40, 80.6];
 
   function calculateDrawdownIncrement(balance: number, drawdownStep: number) {
     if (drawdownStep === 0) return 0;
@@ -83,12 +83,18 @@ export default function Challenges() {
     let _base;
     let _step;
 
-    if (shareStep < 3) {
+    if (shareStep < 4) {
       _base = baseIncrement;
       _step = shareStep;
     } else {
-      _base = baseIncrement * 2;
+      _base = baseIncrement * 1.5;
       _step = shareStep - 1;
+    }
+
+    if (config.drawdown < 3) {
+      _base = baseIncrement;
+    } else {
+      _base = _base * 1.7;
     }
 
     return Math.ceil(_base * _step);
@@ -114,7 +120,7 @@ export default function Challenges() {
 
     const shareIncrement = calculateShareIncrement(balance, shareStep);
 
-    return basePrice + drawdownIncrement + shareIncrement;
+    return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
   }
 
   const finalPrice = calculateFinalPrice(
@@ -293,7 +299,7 @@ export default function Challenges() {
             <div className="flex text-5xl gap-3">
               <div className="text-[#5A5A5A] relative">
                 <div className="h-1 bg-[#FF0F0F] w-full absolute top-1/2 -rotate-12" />
-                <div> ${Math.round(finalPrice * 1.3)}</div>
+                <div> ${Math.round(finalPrice * 1.3) - 8}</div>
               </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
