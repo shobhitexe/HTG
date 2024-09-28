@@ -46,11 +46,53 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [51, 110, 220, 390, 790];
+  const basePrices = [59, 118, 228, 398, 798];
 
-  const basePricesTwoStep = [29, 60, 132, 199, 352];
+  const basePricesTwoStep = [37, 68, 140, 207, 360];
 
-  const basePricesThreeStep = [29, 77, 120, 212, 358, 720];
+  const basePricesThreeStep = [37, 85, 128, 220, 366, 728];
+
+  const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
+
+  const shareIncrementArr = [4, 3.7, 7.7, 11.5, 20, 40.3];
+
+  function calculateDrawdownIncrement(balance: number, drawdownStep: number) {
+    if (drawdownStep === 0) return 0;
+
+    const baseIncrement = drawdownIncrementArr[balance] || 0;
+
+    let _base;
+    let _step;
+
+    if (drawdownStep < 3) {
+      _base = baseIncrement;
+      _step = drawdownStep;
+    } else {
+      _base = baseIncrement * 2;
+      _step = drawdownStep - 1;
+    }
+
+    return Math.ceil(_base * _step);
+  }
+
+  function calculateShareIncrement(balance: number, shareStep: number) {
+    if (shareStep === 0) return 0;
+
+    const baseIncrement = shareIncrementArr[balance] || 0;
+
+    let _base;
+    let _step;
+
+    if (shareStep < 3) {
+      _base = baseIncrement;
+      _step = shareStep;
+    } else {
+      _base = baseIncrement * 2;
+      _step = shareStep - 1;
+    }
+
+    return Math.ceil(_base * _step);
+  }
 
   function calculateFinalPrice(
     balance: number,
@@ -67,8 +109,10 @@ export default function Challenges() {
         : config.step === 1
           ? basePricesTwoStep[balance] || 0
           : basePricesThreeStep[balance] || 0;
-    const drawdownIncrement = drawdownStep * 0.055 * basePrice;
-    const shareIncrement = shareStep * 0.0975 * basePrice;
+
+    const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
+
+    const shareIncrement = calculateShareIncrement(balance, shareStep);
 
     return basePrice + drawdownIncrement + shareIncrement;
   }
@@ -253,7 +297,7 @@ export default function Challenges() {
               </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
-                ${Math.round(finalPrice)}
+                ${Math.ceil(finalPrice) - 8}
               </div>
             </div>
           </div>
