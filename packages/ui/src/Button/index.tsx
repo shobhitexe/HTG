@@ -20,7 +20,7 @@ const buttonVariants = cva(
         gold: "bg-goldButtonBg bg-center bg-contain bg-no-repeat text-Rajah",
         silver: "bg-silverbuttonBg bg-center bg-no-repeat bg-contain",
         bronze: "bg-bronzeButtonGradient text-black",
-        pricing: "bg-pricingButtonGradient",
+        pricing: "bg-pricingButtonGradient h-14",
       },
       size: {
         default: "h-10 px-4 py-2",

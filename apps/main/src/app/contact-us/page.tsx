@@ -128,7 +128,7 @@ export default function ContactPage() {
                           href={"mailto:support@fundyourtradinng.io"}
                           className="sm:text-base xs:text-sm text-xs"
                         >
-                          support@heratrading.com
+                          support@heratradingcapital.com
                         </Link>
                       </div>
 
@@ -141,7 +141,7 @@ export default function ContactPage() {
                           className="sm:w-[25px] w-[20px]"
                         />
                         <div className="sm:text-base xs:text-sm text-xs">
-                          Dubai, United Arab Emirates
+                          London, UK
                         </div>
                       </div>
                     </div>

@@ -2,8 +2,13 @@ import { Heading } from "@repo/ui";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@repo/ui";
 import HTCone from "./HTCone";
 import HTCPro from "./HTCPro";
+import { Dispatch, SetStateAction } from "react";
 
-export default function EvalTable() {
+export default function EvalTable({
+  setConfig,
+}: {
+  setConfig: Dispatch<SetStateAction<configType>>;
+}) {
   return (
     <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col gap-5 items-center px-5 text-center">
       <Heading>Our Popular Presets</Heading>
@@ -22,10 +27,10 @@ export default function EvalTable() {
           </TabsTrigger>
         </TabsList> */}
         <TabsContent value="one">
-          <HTCone />
+          <HTCone setConfig={setConfig} />
         </TabsContent>
         <TabsContent value="pro">
-          <HTCPro />
+          <HTCPro setConfig={setConfig} />
         </TabsContent>
       </Tabs>
     </section>

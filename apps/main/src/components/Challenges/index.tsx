@@ -3,6 +3,7 @@
 import { Button, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import EvalTable from "../EvalTable";
 
 const balanceArr = ["$10,000", "$25,000", "$50,000", "$100,000", "$200,000"];
 
@@ -20,7 +21,7 @@ const balanceArrThreeStep = [
   "$50,000",
   "$100,000",
   "$200,000",
-  "$400,000",
+  "$300,000",
 ];
 
 const initialDrawdownArr = [
@@ -37,7 +38,7 @@ const initialDrawdownArr = [
 const payoutShareArr = ["40%", "50%", "60%", "70%", "80%", "90%", "100%"];
 
 export default function Challenges() {
-  const [config, setConfig] = useState({
+  const [config, setConfig] = useState<configType>({
     step: 0,
     accType: 0,
     platform: 0,
@@ -50,7 +51,7 @@ export default function Challenges() {
 
   const basePricesTwoStep = [37, 68, 140, 207, 360];
 
-  const basePricesThreeStep = [37, 85, 128, 220, 366, 728];
+  const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
 
   const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
 
@@ -138,7 +139,10 @@ export default function Challenges() {
   }, [config.step]);
 
   return (
-    <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col gap-5 items-center px-5 text-center">
+    <section
+      id="challenges"
+      className="lg:mt-20 sm:mt-28 mt-20 flex flex-col gap-5 items-center px-5 text-center"
+    >
       <Heading>Choose your Evaluation</Heading>
       <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
         Let us help you to choose your demo forex or futures evaluation account
@@ -336,7 +340,11 @@ export default function Challenges() {
             </div>
             <Seperator />
             <div className="flex items-center justify-between">
-              <div>Initial Balance DD :</div>
+              <div>
+                {config.step === 0
+                  ? "Max Total Drawdown"
+                  : "Initial Balance DD :"}
+              </div>
               <div className="text-RoyalOrange">
                 {initialDrawdownArr[config.drawdown]}
               </div>
@@ -345,7 +353,11 @@ export default function Challenges() {
             <div className="flex items-center justify-between">
               <div>Profit Target :</div>
               <div className="text-RoyalOrange">
-                {config.step === 0 ? "9%" : "10% / 4%"}
+                {config.step === 0
+                  ? "9%"
+                  : config.step === 1
+                    ? "10% / 4%"
+                    : "10% / 4% / 4%"}
               </div>
             </div>
             <Seperator />
@@ -387,6 +399,8 @@ export default function Challenges() {
           </div>
         </div>
       </div>
+
+      <EvalTable setConfig={setConfig} />
     </section>
   );
 }

@@ -22,7 +22,7 @@ export default function Home() {
       <Leaderboard />
       <TableComponent />
       <Challenges />
-      <EvalTable />
+      {/* <EvalTable /> */}
       <FundingJourney />
       <HowItWorks />
       <Community />

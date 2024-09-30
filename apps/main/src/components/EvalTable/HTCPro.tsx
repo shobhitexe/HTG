@@ -7,6 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@repo/ui";
+import { Dispatch, SetStateAction } from "react";
 
 const TableData = [
   {
@@ -72,13 +73,53 @@ const TableData = [
 ];
 
 const TableHeadings = [
-  { title: "Account Size", price: "", link: "" },
-  { title: "Budget Friendly", price: "$58", link: "" },
-  { title: "Olympus (Amateur)", price: "$529", link: "" },
-  { title: "Titan Tier", price: "$789", link: "" },
+  {
+    title: "Account Size",
+    price: "",
+  },
+  {
+    title: "Budget Friendly",
+    price: "$58",
+    config: {
+      step: 0,
+      accType: 0,
+      platform: 0,
+      balance: 0,
+      drawdown: 0,
+      share: 0,
+    },
+  },
+  {
+    title: "Olympus (Amateur)",
+    price: "$529",
+    config: {
+      step: 0,
+      accType: 0,
+      platform: 0,
+      balance: 3,
+      drawdown: 0,
+      share: 0,
+    },
+  },
+  {
+    title: "Titan Tier",
+    price: "$789",
+    config: {
+      step: 2,
+      accType: 0,
+      platform: 0,
+      balance: 4,
+      drawdown: 2,
+      share: 4,
+    },
+  },
 ];
 
-export default function HTCPro() {
+export default function HTCPro({
+  setConfig,
+}: {
+  setConfig: Dispatch<SetStateAction<configType>>;
+}) {
   return (
     <div className="sm:w-[80%] w-[90%] mx-auto mt-10 border border-white/10 rounded-xl relative">
       <div className="absolute inset-x-0 h-px w-full mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-white/40 to-transparent" />
@@ -94,10 +135,13 @@ export default function HTCPro() {
                 <div className="flex flex-col items-center justify-center py-5 gap-2">
                   <div>{item.title}</div>
 
-                  {item.price !== "" && (
+                  {item.price !== "" && item.config && (
                     <Button
                       variant={"pricing"}
                       className="flex flex-col items-center justify-center text-black w-fit px-5 h-14"
+                      onClick={() => {
+                        setConfig(item.config);
+                      }}
                     >
                       <div className="font-semibold text-base leading-none">
                         Get Plan
