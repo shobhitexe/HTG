@@ -13,14 +13,14 @@ export default function EvalTable() {
       </div>
 
       <Tabs defaultValue="one" className="w-full">
-        <TabsList className="bg-[#161616]">
+        {/* <TabsList className="bg-[#161616]">
           <TabsTrigger value="one" className="text-lg">
             HTC One
           </TabsTrigger>
           <TabsTrigger value="pro" className="text-lg">
             HTC Pro
           </TabsTrigger>
-        </TabsList>
+        </TabsList> */}
         <TabsContent value="one">
           <HTCone />
         </TabsContent>
