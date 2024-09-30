@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@repo/ui";
 import { Dispatch, SetStateAction } from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const TableData = [
   {
@@ -71,7 +71,7 @@ const TableData = [
     heading: "Daily Profit Cap",
     budget: "1.9%",
     olympus: "1.9%",
-    titan: "2%",
+    titan: "-",
   },
 ];
 
