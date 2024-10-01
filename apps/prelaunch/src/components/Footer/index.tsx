@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,8 +21,9 @@ export default function Footer() {
       <div className="text-Apricot text-sm flex sm:flex-row flex-col text-center items-center justify-between">
         <div>Copyright © 2024 HeraTradingCapital. All Rights Reserved</div>
         <div>
-          Terms & Conditions <span className="text-white">-</span> Privacy &
-          policy
+          <Link href={"/terms-and-conditions"}>Terms & Conditions</Link>{" "}
+          <span className="text-white">-</span>{" "}
+          <Link href={"/about-us"}>About Us</Link>
         </div>
       </div>
     </div>

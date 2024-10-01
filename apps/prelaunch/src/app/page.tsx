@@ -1,4 +1,10 @@
-import { BecomeTrader, Community, Discord, Hero } from "@/components";
+import {
+  BecomeTrader,
+  Challenges,
+  Community,
+  Discord,
+  Hero,
+} from "@/components";
 import WhyHera from "@/components/WhyHera";
 import { Toaster } from "@repo/ui";
 
@@ -8,6 +14,7 @@ export default function Home() {
       <Hero />
       <Discord />
       <WhyHera />
+      <Challenges />
       <BecomeTrader />
       <Community />
       <Toaster />

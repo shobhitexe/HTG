@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@repo/ui";
+import MobileNav from "./MobileNav";
+
+export const navLinks = [
+  { title: "About Us", link: "/about-us" },
+  { title: "Contact Us", link: "/contact-us" },
+];
 
 export default function Navbar() {
   return (
@@ -22,15 +28,26 @@ export default function Navbar() {
             className="sm:w-[180px] w-[150px]"
           />
         </Link>
-        <Link href={"#waitlist-form"} className="z-[10]">
-          <Button
-            variant={"golden"}
-            size={"xl"}
-            className="text-black font-ClashGroteskMedium text-base sm:px-10 px-5 sm:h-10 h-8"
-          >
-            Join the Waitlist
-          </Button>
-        </Link>
+
+        <div className="z-[10] items-center gap-5 text-Gray sm:flex hidden">
+          {navLinks.map((item) => (
+            <Link key={item.title} href={item.link}>
+              {item.title}
+            </Link>
+          ))}
+
+          <Link href={"#waitlist-form"}>
+            <Button
+              variant={"golden"}
+              size={"xl"}
+              className="text-black font-ClashGroteskMedium text-base sm:px-10 px-5 sm:h-10 h-8"
+            >
+              Join the Waitlist
+            </Button>
+          </Link>
+        </div>
+
+        <MobileNav />
       </div>
     </header>
   );

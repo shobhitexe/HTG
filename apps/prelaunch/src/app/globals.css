@@ -87,7 +87,7 @@ body {
   background-color: #070707;
   color: white;
   font-family: ClashGrotesk-Medium;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

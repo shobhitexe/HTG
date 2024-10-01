@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="flex sm:flex-row flex-col justify-center">
         <div className="flex flex-col sm:gap-5 gap-3 max-sm:items-center max-sm:text-center">
-          <GoldenText className="font-Kugile lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold md:py-6 sm:py-4 py-3">
+          <GoldenText className="font-Kugile lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold md:py-6 py-5 max-sm:py-3">
             Go Beyond your
             <br />
             Trading Limits
