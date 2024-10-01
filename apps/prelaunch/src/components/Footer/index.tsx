@@ -13,7 +13,7 @@ export default function Footer() {
         />
         <div className="text-white/50 max-w-xs text-sm">
           Hera Trading Group, the Epitome of Trading like the Gods, with Capital
-          of Up To $200,000.
+          of Up To $300,000.
         </div>
       </div>
       <div className="bg-white/40 h-px w-full" />
