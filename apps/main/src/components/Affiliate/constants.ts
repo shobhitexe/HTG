@@ -65,9 +65,12 @@ const affiliateModelArray = [
   },
 ];
 
+const rewardsArray = [{}];
+
 export const affiliateConstants = {
   affiliateRanksArr,
   pointSystemArray,
   partnerWithHeraArray,
   affiliateModelArray,
+  rewardsArray,
 };

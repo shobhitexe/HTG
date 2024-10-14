@@ -173,5 +173,24 @@ function Model() {
 }
 
 function Rewards() {
-  return <div></div>;
+  return (
+    <div className="flex flex-col w-full justify-center items-center">
+      <div className="bg-DarkCharcoal h-px w-[90%] mx-auto" />
+      <div className="flex items-center justify-around">
+        <div className="flex flex-col py-5">
+          <div className="text-Apricot font-Kugile md:text-4xl text-3xl font-semibold">
+            Redeem your Rewards!
+          </div>
+          <div className="font-ClashGroteskLight max-w-sm">
+            Use this calculator to estimate your earnings of up to 18% for each
+            new referral. This calculation is based on a client purchasing one
+            Stellar $200K 2-Step Challenge.
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+      <div className="bg-DarkCharcoal h-px w-[90%] mx-auto" />
+    </div>
+  );
 }
