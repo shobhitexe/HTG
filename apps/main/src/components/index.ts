@@ -1,3 +1,5 @@
+import CalculateEarnings from "./Affiliate/CalculateEarnings";
+import { affiliateConstants } from "./Affiliate/constants";
 import Challenges from "./Challenges";
 import Community from "./Community";
 import Discord from "./Discord";
@@ -30,4 +32,6 @@ export {
   Video,
   Challenges,
   Leaderboard,
+  CalculateEarnings,
+  affiliateConstants,
 };

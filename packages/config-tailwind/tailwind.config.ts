@@ -29,10 +29,21 @@ const config: Omit<Config, "content"> = {
 
         silverTextGradient:
           "linear-gradient(94.77deg, #FFFFFF 16.46%, #999999 83.54%)",
+
+        silverChipGradient:
+          "linear-gradient(84.81deg, #858585 7.47%, #FFFFFF 92.53%)",
+
         pricingButtonGradient:
           "linear-gradient(104.89deg, #FFB169 20.88%, #CD7B28 79.12%)",
         referralPointsGradientBG:
           "linear-gradient(270deg, #070707 3.25%, #62462C 100%)",
+
+        rankCardBg:
+          "linear-gradient(195.05deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.06) 100%)",
+
+        rankCardGoldenBg: "linear-gradient(180deg, #BD793A 0%, #2F1600 100%)",
+        affiliateModelIndexBg:
+          "linear-gradient(180deg, #C0854F 0%, #5C3B1C 100%)",
 
         goldButtonBg: "url('/images/buttons/gold.png')",
         silverbuttonBg: "url('/images/buttons/silver.png')",
@@ -59,6 +70,8 @@ const config: Omit<Config, "content"> = {
         RaisinBlack: "#232323",
         AmericanSilver: "#D1D1D1",
         RoyalOrange: "#FF9E44",
+        Liver: "#5A3A1B",
+        DarkCharcoal: "#323232",
       },
 
       borderRadius: {},
