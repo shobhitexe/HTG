@@ -70,6 +70,10 @@ export default function Footer() {
               Embark on a Profitable Journey : Elevate Your Trading with Our
               Proprietary Firm.
             </h1>
+
+            <div className="text-white/50 max-w-xs text-sm mt-2">
+              Hera Trading Capital Limited: 15932729
+            </div>
           </div>
           <div className="flex items-start flex-wrap lg:gap-32 sm:gap-10 gap-5">
             {footerLinks.map((footer) => (
