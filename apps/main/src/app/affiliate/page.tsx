@@ -1,4 +1,9 @@
-import { affiliateConstants, CalculateEarnings } from "@/components";
+import {
+  affiliateConstants,
+  AffiliateContest,
+  CalculateEarnings,
+  Community,
+} from "@/components";
 import { GoldenText } from "@repo/ui";
 import Image from "next/image";
 import { ReactNode } from "react";
@@ -32,6 +37,12 @@ export default function page() {
       <Model />
 
       <Rewards />
+
+      <AffiliateContest />
+
+      <div className="w-full mb-20">
+        <Community />
+      </div>
     </div>
   );
 }
@@ -176,8 +187,8 @@ function Rewards() {
   return (
     <div className="flex flex-col w-full justify-center items-center">
       <div className="bg-DarkCharcoal h-px w-[90%] mx-auto" />
-      <div className="flex items-center justify-around">
-        <div className="flex flex-col py-5">
+      <div className="flex sm:flex-row flex-col max-sm:py-5 items-center justify-around w-full px-10 gap-5">
+        <div className="flex flex-col sm:py-5">
           <div className="text-Apricot font-Kugile md:text-4xl text-3xl font-semibold">
             Redeem your Rewards!
           </div>
@@ -188,7 +199,20 @@ function Rewards() {
           </div>
         </div>
 
-        <div></div>
+        <div className="flex flex-col bg-rankCardBg px-10 py-5 rounded-xl border border-white/5 max-w-md w-full">
+          {affiliateConstants.rewardsArray.map((item) => (
+            <div
+              key={item.account}
+              className="flex items-center justify-between text-xl relative"
+            >
+              <div>{item.account}</div>
+              <div className="absolute top-1/2 left-1/2 -translate-y-1/2 translate-x-1/2">
+                =
+              </div>
+              <div className="text-Apricot">{item.point}</div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="bg-DarkCharcoal h-px w-[90%] mx-auto" />
     </div>

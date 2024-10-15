@@ -65,7 +65,11 @@ const affiliateModelArray = [
   },
 ];
 
-const rewardsArray = [{}];
+const rewardsArray = [
+  { account: "$10,000 ", point: "30" },
+  { account: "$100,000 ", point: "75" },
+  { account: "$200,000 ", point: "100" },
+];
 
 export const affiliateConstants = {
   affiliateRanksArr,

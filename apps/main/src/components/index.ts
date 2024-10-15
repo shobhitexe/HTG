@@ -1,3 +1,4 @@
+import AffiliateContest from "./Affiliate/AffiliateContest";
 import CalculateEarnings from "./Affiliate/CalculateEarnings";
 import { affiliateConstants } from "./Affiliate/constants";
 import Challenges from "./Challenges";
@@ -34,4 +35,5 @@ export {
   Leaderboard,
   CalculateEarnings,
   affiliateConstants,
+  AffiliateContest,
 };
