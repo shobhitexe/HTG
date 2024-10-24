@@ -18,7 +18,7 @@ const TableData = [
   },
   {
     heading: "Profit Targets",
-    HeraTrading: "8% / 4%",
+    HeraTrading: "10% / 5%",
     FTMO: "10% / 5%",
     FundedNext: "10% / 5%",
   },

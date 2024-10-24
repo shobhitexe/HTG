@@ -63,14 +63,14 @@ const TableData = [
   },
   {
     heading: "Daily Pause Allowance",
-    budget: "1.9%",
-    olympus: "1.9%",
+    budget: "2%",
+    olympus: "2%",
     titan: "2%",
   },
   {
     heading: "Daily Profit Cap",
-    budget: "1.9%",
-    olympus: "1.9%",
+    budget: "2%",
+    olympus: "2%",
     titan: "-",
   },
 ];

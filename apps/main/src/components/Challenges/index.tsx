@@ -25,7 +25,7 @@ const balanceArrThreeStep = [
 ];
 
 const initialDrawdownArr = [
-  "6%",
+  "8%",
   "7%",
   "8%",
   "9%",
@@ -334,11 +334,17 @@ export default function Challenges() {
               </div>
             </div>
             <Seperator />
-            <div className="flex items-center justify-between">
-              <div>Daily Drawdown :</div>
-              <div className="text-RoyalOrange">4% ($4,000)</div>
-            </div>
-            <Seperator />
+
+            {config.step !== 0 && (
+              <>
+                <div className="flex items-center justify-between">
+                  <div>Daily Drawdown :</div>
+                  <div className="text-RoyalOrange">4% ($4,000)</div>
+                </div>
+                <Seperator />
+              </>
+            )}
+
             <div className="flex items-center justify-between">
               <div>
                 {config.step === 0
@@ -356,7 +362,7 @@ export default function Challenges() {
                 {config.step === 0
                   ? "9%"
                   : config.step === 1
-                    ? "10% / 4%"
+                    ? "10% / 5%"
                     : "10% / 4% / 4%"}
               </div>
             </div>

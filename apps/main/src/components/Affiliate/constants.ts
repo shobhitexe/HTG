@@ -3,19 +3,19 @@ const affiliateRanksArr = [
     rank: "AMBASSADOR",
     commission: "05%",
     title: "Withdraw Bi-Weekly",
-    sub: "Earn 10% for each purchase of your friends, whether it's a new account or restart you get 10% instantly to your affiliate account.",
+    sub: "Earn 5% for each purchase of your friends, whether it's a new account or restart you get 5% instantly to your affiliate account.",
   },
   {
     rank: "PARTNER",
     commission: "09%",
     title: "Withdraw Weekly",
-    sub: "Earn 20% for each purchase of your friends, whether it's a new account or restart you get 20% instantly to your affiliate account.",
+    sub: "Earn 9% for each purchase of your friends, whether it's a new account or restart you get 9% instantly to your affiliate account.",
   },
   {
     rank: "ELITE",
     commission: "12%",
     title: "Lifetime Commission",
-    sub: "Earn 15% for each purchase of your friends, whether it's a new account or restart you get 15% instantly to your affiliate account.",
+    sub: "Earn 12% for each purchase of your friends, whether it's a new account or restart you get 12% instantly to your affiliate account.",
   },
 ];
 
@@ -55,7 +55,7 @@ const affiliateModelArray = [
   { title: "Apply", desc: "Apply for the affiliate program" },
   {
     title: "Get Verified",
-    desc: "After verificaion, you'll receive your affiliat account  credentials via email",
+    desc: "After verificaion, you'll receive your affiliate account  credentials via email",
   },
   { title: "Promote", desc: "Promote HTC and share your affiliate link" },
   { title: "Track", desc: "Track your progress via your affiliate dashboard" },

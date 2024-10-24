@@ -4,7 +4,6 @@ import {
   CalculateEarnings,
   Community,
 } from "@/components";
-import { GoldenText } from "@repo/ui";
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -21,8 +20,8 @@ export default function page() {
           Affiliate Program
         </h1>
         <h2 className="text-AmericanSilver font-ClashGroteskLight sm:text-2xl text-lg max-w-5xl">
-          Become an affiliate for Hera Trading Capital and receive up to 25%
-          commission from all traders you recommend.
+          Become an affiliate for Hera Trading Capital and not only earn a
+          commission, but also earn on your communities profitable trades!
         </h2>
       </div>
 
