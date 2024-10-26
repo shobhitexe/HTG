@@ -45,6 +45,8 @@ const config: Omit<Config, "content"> = {
         affiliateModelIndexBg:
           "linear-gradient(180deg, #C0854F 0%, #5C3B1C 100%)",
 
+        sliderBg: "linear-gradient(90deg, #825023 0%, #EE9646 100%)",
+
         goldButtonBg: "url('/images/buttons/gold.png')",
         silverbuttonBg: "url('/images/buttons/silver.png')",
       },

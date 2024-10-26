@@ -27,6 +27,7 @@ import {
   AccordionTrigger,
 } from "./Accordian";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
+import { Slider } from "./Slider";
 
 export {
   Button,
@@ -56,4 +57,5 @@ export {
   TabsContent,
   TabsList,
   TabsTrigger,
+  Slider,
 };

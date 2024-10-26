@@ -4,7 +4,7 @@ import { Button } from "@repo/ui";
 import MobileNav from "./MobileNav";
 
 export const navLinks = [
-  { title: "Evaluations", link: "" },
+  { title: "Evaluations", link: "/#challenges" },
   { title: "About Us", link: "/about-us" },
   { title: "Affiliate", link: "/affiliate" },
   { title: "FAQs", link: "/faqs" },

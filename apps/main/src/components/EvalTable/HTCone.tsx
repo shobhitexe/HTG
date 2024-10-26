@@ -78,7 +78,7 @@ const TableData = [
 const TableHeadings = [
   { title: "Account Size", price: "", link: "" },
   {
-    title: "Budget Friendly",
+    title: "Warming up",
     price: "$51",
     config: {
       step: 0,
@@ -90,7 +90,7 @@ const TableHeadings = [
     },
   },
   {
-    title: "Olympus (Amateur)",
+    title: "Midway to Olympus",
     price: "$390",
     config: {
       step: 0,
