@@ -3,7 +3,7 @@
 import { Button, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import EvalTable from "../EvalTable";
+// import EvalTable from "../EvalTable";
 
 const balanceArr = ["$10,000", "$25,000", "$50,000", "$100,000", "$200,000"];
 
@@ -98,6 +98,8 @@ export default function Challenges() {
       _base = baseIncrement * 1.5;
       _step = shareStep - 1;
     }
+
+    _step += 2;
 
     if (config.drawdown < 3) {
       _base = baseIncrement;
