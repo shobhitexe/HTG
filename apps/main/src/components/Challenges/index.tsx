@@ -35,7 +35,14 @@ const initialDrawdownArr = [
   "13%",
   "14%",
 ];
-const payoutShareArr = ["40%", "50%", "60%", "70%", "80%", "90%", "100%"];
+const payoutShareArr = [
+  // "40%", "50%",
+  "60%",
+  "70%",
+  "80%",
+  "90%",
+  "100%",
+];
 
 export default function Challenges() {
   const [config, setConfig] = useState<configType>({
@@ -164,7 +171,7 @@ export default function Challenges() {
               Select steps count:
             </div>
             <div className="flex items-center gap-2 flex-wrap">
-              {Array.from({ length: 3 }).map((_, idx) => (
+              {Array.from({ length: 2 }).map((_, idx) => (
                 <Button
                   key={idx}
                   variant={idx === config.step ? "bronze" : "secondary"}
@@ -248,7 +255,7 @@ export default function Challenges() {
           </div>
           {config.step !== 0 && (
             <>
-              <div className="flex flex-col gap-2">
+              {/* <div className="flex flex-col gap-2">
                 <div>
                   <span className="font-ClashGroteskMedium text-RoyalOrange">
                     4.
@@ -268,7 +275,7 @@ export default function Challenges() {
                     </Button>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col gap-2">
                 <div>
@@ -406,7 +413,7 @@ export default function Challenges() {
         </div>
       </div>
 
-      <EvalTable setConfig={setConfig} />
+      {/* <EvalTable setConfig={setConfig} /> */}
     </section>
   );
 }
