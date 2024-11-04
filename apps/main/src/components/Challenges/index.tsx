@@ -37,11 +37,20 @@ const initialDrawdownArr = [
 ];
 const payoutShareArr = [
   // "40%", "50%",
-  "60%",
-  "70%",
+  // "60%",
+  // "70%",
   "80%",
   "90%",
   "100%",
+];
+
+const twoStepPriceArr = [
+  [37, 41, 46],
+  [51, 57, 64],
+  [110, 123, 138],
+  [220, 246, 278],
+  [390, 437, 489],
+  [790, 885, 991],
 ];
 
 export default function Challenges() {
@@ -56,56 +65,55 @@ export default function Challenges() {
 
   const basePrices = [59, 118, 228, 398, 798];
 
-  const basePricesTwoStep = [37, 68, 140, 207, 360];
+  const basePricesTwoStep = [37, 51, 140, 207, 360];
 
   const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
 
-  const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
+  // const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
 
   const shareIncrementArr = [4, 7.4, 15.4, 23, 40, 80.6];
 
-  function calculateDrawdownIncrement(balance: number, drawdownStep: number) {
-    if (drawdownStep === 0) return 0;
+  // function calculateDrawdownIncrement(balance: number, drawdownStep: number) {
+  //   if (drawdownStep === 0) return 0;
 
-    const baseIncrement = drawdownIncrementArr[balance] || 0;
+  //   // const baseIncrement = drawdownIncrementArr[balance] || 0;
+  //   const baseIncrement = 0;
 
-    let _base;
-    let _step;
+  //   let _base;
+  //   let _step;
 
-    if (drawdownStep < 3) {
-      _base = baseIncrement;
-      _step = drawdownStep;
-    } else {
-      _base = baseIncrement * 2;
-      _step = drawdownStep - 1;
-    }
+  //   if (drawdownStep < 3) {
+  //     _base = baseIncrement;
+  //     _step = drawdownStep;
+  //   } else {
+  //     _base = baseIncrement * 2;
+  //     _step = drawdownStep - 1;
+  //   }
 
-    return Math.ceil(_base * _step);
-  }
+  //   return Math.ceil(_base * _step);
+  // }
 
   function calculateShareIncrement(balance: number, shareStep: number) {
-    if (shareStep === 0) return 0;
+    // if (shareStep === 0) return 0;
 
     const baseIncrement = shareIncrementArr[balance] || 0;
 
     let _base;
     let _step;
 
-    if (shareStep < 4) {
-      _base = baseIncrement;
-      _step = shareStep;
-    } else {
-      _base = baseIncrement * 1.5;
-      _step = shareStep - 1;
-    }
+    // if (shareStep < 4) {
+    _base = baseIncrement;
+    _step = shareStep;
+    // } else {
+    //   _base = baseIncrement * 1.5;
+    //   _step = shareStep - 1;
+    // }
 
-    _step += 2;
-
-    if (config.drawdown < 3) {
-      _base = baseIncrement;
-    } else {
-      _base = _base * 1.7;
-    }
+    // if (config.drawdown < 3) {
+    // _base = baseIncrement;
+    // } else {
+    //   _base = _base * 1.7;
+    // }
 
     return Math.ceil(_base * _step);
   }
@@ -126,11 +134,16 @@ export default function Challenges() {
           ? basePricesTwoStep[balance] || 0
           : basePricesThreeStep[balance] || 0;
 
-    const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
+    // const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
 
     const shareIncrement = calculateShareIncrement(balance, shareStep);
 
-    return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
+    const finalPriceOneStep = Math.ceil(basePrice + shareIncrement);
+
+    const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
+
+    // return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
+    return config.step === 0 ? finalPriceOneStep : finalPriceTwoStep;
   }
 
   const finalPrice = calculateFinalPrice(
@@ -141,7 +154,7 @@ export default function Challenges() {
 
   useEffect(() => {
     if (config.step === 0) {
-      setConfig((prev) => ({ ...prev, share: 4, drawdown: 0 }));
+      setConfig((prev) => ({ ...prev, share: 0, drawdown: 0 }));
     } else {
       setConfig((prev) => ({ ...prev, share: 0 }));
     }
@@ -312,11 +325,17 @@ export default function Challenges() {
             <div className="flex text-5xl gap-3">
               <div className="text-[#5A5A5A] relative">
                 <div className="h-1 bg-[#FF0F0F] w-full absolute top-1/2 -rotate-12" />
-                <div> ${Math.round(finalPrice * 1.3) - 8}</div>
+                <div>
+                  {config.step === 0
+                    ? `$${Math.round(finalPrice * 1.3) - 8}`
+                    : `$${Math.round(finalPrice * 1.3)}`}
+                </div>
               </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
-                ${Math.ceil(finalPrice) - 8}
+                {config.step === 0
+                  ? `$${Math.ceil(finalPrice) - 8}`
+                  : `$${Math.ceil(finalPrice)}`}
               </div>
             </div>
           </div>
