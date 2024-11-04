@@ -18,6 +18,9 @@ export default function Footer() {
         <div className="text-white/50 max-w-xs text-sm mt-2">
           Hera Trading Capital Limited: 15932729
         </div>
+        <div className="text-white/50 max-w-xs text-sm mt-2">
+          Unit 5 Christy Court, Basildon, England, SS15 6TL
+        </div>
       </div>
       <div className="bg-white/40 h-px w-full" />
 
