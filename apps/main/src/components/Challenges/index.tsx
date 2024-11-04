@@ -1,7 +1,8 @@
 "use client";
 
-import { Button, GoldenText, Heading } from "@repo/ui";
+import { Button, buttonVariants, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 // import EvalTable from "../EvalTable";
 
@@ -423,13 +424,16 @@ export default function Challenges() {
               </div>
             </div> */}
 
-            <Button
-              variant={"bronze"}
-              size={"xl"}
-              className="text-black font-ClashGroteskSemiBold w-fit mx-auto"
+            <Link
+              href={
+                "https://platform.heratradingcapital.com/register?demo=false&competitions=false"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-black font-ClashGroteskSemiBold w-fit mx-auto ${buttonVariants({ variant: "bronze", size: "xl" })}`}
             >
               Get Started
-            </Button>
+            </Link>
           </div>
         </div>
       </div>
