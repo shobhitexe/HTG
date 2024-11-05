@@ -2,12 +2,13 @@ import {
   Challenges,
   Community,
   Discord,
-  EvalTable,
-  Events,
+  // EvalTable,
+  // Events,
   FundingJourney,
   Hero,
   HowItWorks,
   Leaderboard,
+  Platform,
   TableComponent,
   WhyHera,
 } from "@/components";
@@ -22,6 +23,9 @@ export default function Home() {
       <Leaderboard />
       <TableComponent />
       <Challenges />
+
+      <Platform />
+
       {/* <EvalTable /> */}
       <FundingJourney />
       <HowItWorks />

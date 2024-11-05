@@ -14,6 +14,7 @@ import Video from "./HowItWorks/Video";
 import Leaderboard from "./Leaderboard";
 import Navbar from "./Navbar";
 import PageHeading from "./PageHeading";
+import Platform from "./Platform";
 import TableComponent from "./Table";
 import WhyHera from "./WhyHera";
 
@@ -36,4 +37,5 @@ export {
   CalculateEarnings,
   affiliateConstants,
   AffiliateContest,
+  Platform,
 };

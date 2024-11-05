@@ -20,6 +20,25 @@ const pointers = [
   },
 ];
 
+const pointersV2 = [
+  {
+    title: "$2M",
+    desc: "Scale your Equity Edge Account up to",
+  },
+  {
+    title: "90%",
+    desc: "Receive up to 90% of your Simulated profits",
+  },
+  {
+    title: "120+",
+    desc: "Countries Supported",
+  },
+  {
+    title: "48H",
+    desc: "Avg payout processing time",
+  },
+];
+
 export default function WhyHera() {
   return (
     <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col items-center">
@@ -46,7 +65,26 @@ export default function WhyHera() {
           and support.
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-5 mt-5 px-5">
+        <div className="p-px bg-gradient-to-b from-black to-Apricot/30 rounded-3xl mt-10 sm:mx-10 mx-5">
+          <div
+            className="flex items-start justify-around w-full text-center gap-10 flex-wrap p-10 rounded-3xl relative h-full"
+            style={{
+              background:
+                "radial-gradient(at center bottom, #FFB169 -100%, #070707 60%)",
+            }}
+          >
+            {pointersV2.map((item) => (
+              <div key={item.title} className="max-w-xs flex flex-col gap-1">
+                <div className="text-Apricot sm:text-4xl text-3xl font-semibold">
+                  {item.title}
+                </div>
+                <div className="sm:text-xl text-lg">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* <div className="flex flex-wrap items-center justify-center gap-5 mt-5 px-5">
           {pointers.map((item) => (
             <div
               key={item.title}
@@ -75,7 +113,7 @@ export default function WhyHera() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <Button variant="gold" size={"xl"}>
