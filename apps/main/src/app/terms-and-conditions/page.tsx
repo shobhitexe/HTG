@@ -422,6 +422,63 @@ export default function page() {
           of the website.
         </p>
       </div>
+
+      <div className="flex flex-col sm:gap-5 gap-1">
+        <GoldenText className={HeadingClass}>
+          PROHIBITED TRADING STRATEGIES
+        </GoldenText>
+        <p className="text-AmericanSilver font-ClashGroteskLight">
+          1. Risk Management in Trading:
+          <br />
+          Risking your entire account balance on a single trade is strictly
+          prohibited. Trading strategies that involve excessive risk-taking
+          violate our terms and will lead to account termination without any
+          refund. We prioritize sustainable trading practices for long-term
+          success.
+          <br />
+          2. Hedging Regulations: Hedging across multiple accounts, including
+          those registered under the same trader, is not permitted. Opening
+          opposing positions on the same asset undermines fair trading practices
+          and compromises the integrity of our platform. Violating this policy
+          may result in account suspension or termination without any refund.
+          <br />
+          3. Expert Advisor (EA) Usage: You are welcome to use Expert Advisors
+          (EAs) on your account, provided that the same strategy is not executed
+          by multiple users. To ensure fairness, each user is limited to one
+          unique strategy. If we detect multiple users utilizing the same EA,
+          your account may be terminated without any refund. We recommend that
+          every trader develops their own customized EA for optimal results.
+          Additionally, please be aware of the server request limitation of 2000
+          actions per day (including modifications of TP/SL and order changes),
+          with a maximum position limit of 2000 trades per day.
+          <br />
+          4. Simulated Account Trading Standards: Executing large trades without
+          a coherent strategy or disregarding essential market analysis and risk
+          management principles is considered abuse of the simulated
+          environment. Such behavior will be penalized, as it does not reflect
+          genuine trading practices and provides non-viable trading data.
+          <br />
+          5. Independent Evaluation Protocol: Each trading evaluation must be
+          completed independently. Copying trades manually or using EAs from one
+          account to another, including from a master account to an evaluation
+          account, is strictly prohibited. This policy applies to both
+          individual trades and trading strategies.
+          <br />
+          6. Account Management After Evaluation: Upon successfully passing the
+          evaluation, you can manage up to $300,000 in funded accounts at Hera
+          Trading Capital. Please note you can scale your accounts to
+          $2,000,000, but please be aware your max starting allocation during
+          the funded phase is $300,000. You may also copy trades between your
+          funded account and one evaluation account. If you use a trade copier,
+          you must be able to verify ownership of both accounts involved in the
+          copying process.
+          <br /> RESTRICTED COUNTRIES
+          <br /> USA <br />
+          North Korea
+          <br /> Pakistan
+          <br /> Iran
+        </p>
+      </div>
     </div>
   );
 }

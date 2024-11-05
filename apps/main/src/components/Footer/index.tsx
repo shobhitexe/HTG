@@ -18,6 +18,7 @@ const footerLinks = [
     links: [
       { title: "Privacy Policy", href: "/privacy-policy" },
       { title: "Refund Policy", href: "/refund-policy" },
+      { title: "Affiliate Policy", href: "/affiliate-policy" },
       { title: "Terms & Conditions", href: "/terms-and-conditions" },
     ],
   },
