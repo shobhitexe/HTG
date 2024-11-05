@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@repo/ui/styles.css";
-import { Footer, Navbar } from "@/components";
+import { Footer, Livechat, Navbar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Hera Trading Capital",
@@ -99,6 +99,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Livechat />
       </body>
     </html>
   );
