@@ -1,24 +1,24 @@
-import { Button, GoldenText, Heading } from "@repo/ui";
+import { Button, Heading } from "@repo/ui";
 import Image from "next/image";
 
-const pointers = [
-  {
-    title: "100% Profit Splits",
-    desc: "Keep all your profits without sharing them. Hera Traders can enjoy full profit splits, maximizing your earnings from every trade.",
-  },
-  {
-    title: "1 Step Challenges",
-    desc: "Streamline and shorten your journey to getting funded with our 1-step challenge. Prove your trading skills quickly and efficiently.",
-  },
-  {
-    title: "Superfast Payouts",
-    desc: "Enjoy fast and efficient withdrawals with multiple options of payouts!",
-  },
-  {
-    title: "In-person Events",
-    desc: "Keep all your profits without sharing them. Hera Traders enjoy full profit splits, maximizing your earnings from every trade.",
-  },
-];
+// const pointers = [
+//   {
+//     title: "100% Profit Splits",
+//     desc: "Keep all your profits without sharing them. Hera Traders can enjoy full profit splits, maximizing your earnings from every trade.",
+//   },
+//   {
+//     title: "1 Step Challenges",
+//     desc: "Streamline and shorten your journey to getting funded with our 1-step challenge. Prove your trading skills quickly and efficiently.",
+//   },
+//   {
+//     title: "Superfast Payouts",
+//     desc: "Enjoy fast and efficient withdrawals with multiple options of payouts!",
+//   },
+//   {
+//     title: "In-person Events",
+//     desc: "Keep all your profits without sharing them. Hera Traders enjoy full profit splits, maximizing your earnings from every trade.",
+//   },
+// ];
 
 const pointersV2 = [
   {
@@ -67,7 +67,7 @@ export default function WhyHera() {
 
         <div className="p-px bg-gradient-to-b from-black to-Apricot/30 rounded-3xl mt-10 sm:mx-10 mx-5">
           <div
-            className="flex items-start justify-around w-full text-center gap-10 flex-wrap p-10 rounded-3xl relative h-full"
+            className="flex items-start justify-around w-full text-center sm:gap-10 gap-5 flex-wrap p-10 rounded-3xl relative h-full"
             style={{
               background:
                 "radial-gradient(at center bottom, #FFB169 -100%, #070707 60%)",
