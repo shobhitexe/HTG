@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@repo/ui";
+import { Button, buttonVariants } from "@repo/ui";
 import MobileNav from "./MobileNav";
 
 export const navLinks = [
@@ -39,13 +39,17 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <Button
-            variant={"bronze"}
-            className="z-20 text-black font-medium"
+          <Link
+            href={
+              "https://platform.heratradingcapital.com/register?demo=false&competitions=false"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${buttonVariants({ variant: "bronze" })} z-20 text-black font-medium`}
             style={{ borderRadius: "999px" }}
           >
             Get Started
-          </Button>
+          </Link>
         </div>
 
         <MobileNav />
