@@ -30,24 +30,24 @@ const pointSystemArray = [
 
 const partnerWithHeraArray = [
   {
-    title: "MT5 License",
-    desc: "Monevis is a holder of own MT5 License. Enjoy the trading on the most traded platform reliably.",
+    title: "Proven Leadership in the Industry",
+    desc: "Led by a young entrepreneur with experience in both trading and business, Hera Trading Capital has a compelling narrative and relatable brand personality that affiliates can leverage to engage their audience.",
   },
   {
-    title: "Raw Spreads",
-    desc: "Monevis is connected to Tier-1 Liquidity providers that executes trades as if it was executed on real markets.",
+    title: "Generous Affiliate Program",
+    desc: "Hera Trading Capital offers a multi-tier affiliate structure, rewarding affiliates based on the size and volume of referrals, allowing for substantial income growth as their influence expands.",
   },
   {
-    title: "Fast & Reliable Payouts",
-    desc: "Enjoy payouts in any currency and in any country with our Rise partner.",
+    title: "Timely and Reliable Payments",
+    desc: "Affiliates can expect consistent, timely payouts, helping them rely on a steady income stream from their efforts, which builds trust and loyalty.",
   },
   {
-    title: "Free Trials",
-    desc: "The Free Trial allows you to see how the Evaluation Process works and essentially try a simulated version of our Challenge for free.",
+    title: "Structured Point System for Rewards",
+    desc: "Affiliates earn points based on the account levels of their referrals, making it easy to accumulate rewards through consistent performance. This system provides clear goals and tangible rewards for affiliates.",
   },
   {
-    title: "Scale Upto $2 Million",
-    desc: "If Trader meets the conditions of our Scaling Plan, not only do we increase the balance of the Monevis Account by upto 100%.",
+    title: "Additional Income from Community Wins",
+    desc: "Affiliates not only benefit individually but also help their communities, as the top affiliate communities receive extra rewards based on total points.",
   },
 ];
 

@@ -1,5 +1,6 @@
-import { Button, GoldenText, SilverText } from "@repo/ui";
+import { Button, buttonVariants, GoldenText, SilverText } from "@repo/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 const USPs = [
   { title: "Up to 100%", sub: "of Profit Split" },
@@ -34,12 +35,21 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-3 mt-5">
-            <Button variant={"gold"} size={"xl"}>
+            <Link
+              href={"/#challenges"}
+              className={`${buttonVariants({ variant: "gold", size: "xl" })}`}
+            >
               Get Funded
-            </Button>
-            <Button variant={"silver"} size={"xl"}>
+            </Link>
+
+            <Link
+              href={"https://discord.com/invite/cKuzhCUBud"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${buttonVariants({ variant: "silver", size: "xl" })}`}
+            >
               Join Discord
-            </Button>
+            </Link>
           </div>
         </div>
 

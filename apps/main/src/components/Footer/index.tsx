@@ -25,8 +25,8 @@ const footerLinks = [
   {
     title: "Contact Us",
     links: [
-      { title: "", href: "" },
-      { title: "Contact us", href: "/contact-us" },
+      // { title: "", href: "" },
+      { title: "Contact Us", href: "/contact-us" },
     ],
   },
 ];
@@ -35,7 +35,7 @@ const socialMediaArr = [
   {
     name: "instagram",
     img: "/images/footer/instagram.png",
-    link: "",
+    link: "https://www.instagram.com/heratradingcapital",
   },
   {
     name: "youtube",
@@ -50,7 +50,7 @@ const socialMediaArr = [
   {
     name: "discord",
     img: "/images/footer/discord.png",
-    link: "",
+    link: "https://discord.com/invite/cKuzhCUBud",
   },
 ];
 

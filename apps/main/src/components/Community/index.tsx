@@ -14,7 +14,11 @@ export default function Community() {
         and support.
       </div>
 
-      <Link href={"#waitlist-form"}>
+      <Link
+        href={"https://discord.com/invite/cKuzhCUBud"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button
           variant={"golden"}
           size={"xl"}
