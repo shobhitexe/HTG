@@ -40,12 +40,12 @@ const socialMediaArr = [
   {
     name: "youtube",
     img: "/images/footer/youtube.png",
-    link: "",
+    link: "https://www.youtube.com/@ZacAngeli",
   },
   {
     name: "twitter",
     img: "/images/footer/twitter.png",
-    link: "",
+    link: "https://x.com/HeraTrading",
   },
   {
     name: "discord",

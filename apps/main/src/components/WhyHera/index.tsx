@@ -23,11 +23,11 @@ import Image from "next/image";
 const pointersV2 = [
   {
     title: "$2M",
-    desc: "Scale your Equity Edge Account up to",
+    desc: "Scale your Hera Trading Account up to",
   },
   {
     title: "90%",
-    desc: "Receive up to 90% of your Simulated profits",
+    desc: "Receive up to 100% of your Simulated profits",
   },
   {
     title: "120+",

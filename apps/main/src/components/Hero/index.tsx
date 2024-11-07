@@ -36,7 +36,11 @@ export default function Hero() {
 
           <div className="flex gap-3 mt-5">
             <Link
-              href={"/#challenges"}
+              href={
+                "https://platform.heratradingcapital.com/register?demo=false&competitions=false"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${buttonVariants({ variant: "gold", size: "xl" })}`}
             >
               Get Funded
