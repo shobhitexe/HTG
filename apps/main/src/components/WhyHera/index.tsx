@@ -26,7 +26,7 @@ const pointersV2 = [
     desc: "Scale your Hera Trading Account up to",
   },
   {
-    title: "90%",
+    title: "100%",
     desc: "Receive up to 100% of your Simulated profits",
   },
   {

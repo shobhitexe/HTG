@@ -19,9 +19,9 @@ export default function CalculateEarnings() {
         </div>
 
         <div className="text-AmericanSilver md:text-2xl sm:text-lg text-base text-center max-w-5xl font-ClashGroteskLight px-5">
-          Use this calculator to estimate your earnings of up to 18% for each
+          Use this calculator to estimate your earnings of up to 12% for each
           new referral. This calculation is based on a client purchasing one
-          Stellar $200K 2-Step Challenge.
+          $200K 2-Step Challenge.
         </div>
       </div>
 
