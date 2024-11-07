@@ -84,9 +84,8 @@ function PointsSystem() {
       <div className="w-full mx-auto flex flex-col justify-center items-center">
         <Heading>The Point System</Heading>
         <div className="text-AmericanSilver md:text-2xl sm:text-lg text-base text-center max-w-5xl font-ClashGroteskLight px-5">
-          Use this calculator to estimate your earnings of up to 18% for each
-          new referral. This calculation is based on a client purchasing one
-          Stellar $200K 2-Step Challenge.
+          Our affiliates at Hera can earn points which can be redeemed for
+          numerous rewards.
         </div>
       </div>
       <div className="flex sm:flex-row flex-col items-center justify-center sm:gap-10 gap-5 w-full pb-20 px-5">

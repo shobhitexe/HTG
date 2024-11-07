@@ -32,11 +32,11 @@ const GoalsRightArr = [
     desc: "to Enhance Trading",
     icon: "/images/about/3.svg",
   },
-  {
-    title: "No Min",
-    desc: "Trading Days",
-    icon: "/images/about/4.svg",
-  },
+  // {
+  //   title: "No Min",
+  //   desc: "Trading Days",
+  //   icon: "/images/about/4.svg",
+  // },
 ];
 
 const valuesArr = [
