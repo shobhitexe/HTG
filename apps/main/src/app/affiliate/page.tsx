@@ -37,7 +37,7 @@ export default function page() {
 
       <Rewards />
 
-      <AffiliateContest />
+      {/* <AffiliateContest /> */}
 
       <div className="w-full mb-20">
         <Community />
