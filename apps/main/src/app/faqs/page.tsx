@@ -9,8 +9,9 @@ import {
 import { FaqsArray } from "./FaqsArray";
 
 const Headings: Record<number, string> = {
-  7: "General Questions",
-  14: "Payouts",
+  0: "General Trading Rules:",
+  9: "General Questions",
+  16: "Payouts",
 };
 
 export default function page() {

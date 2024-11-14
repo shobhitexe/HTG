@@ -12,9 +12,9 @@ export default function Platform() {
       />
 
       <div className="md:text-2xl text-xl max-w-5xl">
-        Our platform utilizes advanced charting tools powered by TradingView,
-        offering unparalleled insights for technical analysis of GBP-USD,
-        USD-JPY, and many other currency pairs.
+        We provide advanced charting tools powered by TradingView, delivering
+        exceptional insights for in-depth technical analysis across our entire
+        platform.
       </div>
     </section>
   );

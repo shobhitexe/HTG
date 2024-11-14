@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const ButtonsArr = ["Hera Ambassador", "Hera Partner", "Hera Elite"];
 
-const comissionArr = [38.9, 70.02, 93.36];
+const comissionArr = [19.5, 35.1, 46.8];
 
 export default function CalculateEarnings() {
   const [sliderVal, setSliderVal] = useState(0);

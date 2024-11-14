@@ -428,55 +428,88 @@ export default function page() {
           PROHIBITED TRADING STRATEGIES
         </GoldenText>
         <p className="text-AmericanSilver font-ClashGroteskLight">
-          1. Risk Management in Trading:
+          For Hera Trading Capital, the following trading practices are strictly
+          prohibited:
           <br />
-          Risking your entire account balance on a single trade is strictly
-          prohibited. Trading strategies that involve excessive risk-taking
-          violate our terms and will lead to account termination without any
-          refund. We prioritize sustainable trading practices for long-term
-          success.
+          1. Unrealistic Trading Opportunities: This includes exploiting
+          unrealistic prices or trade opportunities such as arbitrage, latency
+          exploitation, front-running price feeds, or any mispricing tactics.
           <br />
-          2. Hedging Regulations: Hedging across multiple accounts, including
-          those registered under the same trader, is not permitted. Opening
-          opposing positions on the same asset undermines fair trading practices
-          and compromises the integrity of our platform. Violating this policy
-          may result in account suspension or termination without any refund.
+          2. Latency Trading: Trading based on latency advantages is not
+          allowed.
           <br />
-          3. Expert Advisor (EA) Usage: You are welcome to use Expert Advisors
-          (EAs) on your account, provided that the same strategy is not executed
-          by multiple users. To ensure fairness, each user is limited to one
-          unique strategy. If we detect multiple users utilizing the same EA,
-          your account may be terminated without any refund. We recommend that
-          every trader develops their own customized EA for optimal results.
-          Additionally, please be aware of the server request limitation of 2000
-          actions per day (including modifications of TP/SL and order changes),
-          with a maximum position limit of 2000 trades per day.
+          3. Arbitrage Trading: Engaging in arbitrage trading methods is
+          prohibited.
           <br />
-          4. Simulated Account Trading Standards: Executing large trades without
-          a coherent strategy or disregarding essential market analysis and risk
-          management principles is considered abuse of the simulated
-          environment. Such behavior will be penalized, as it does not reflect
-          genuine trading practices and provides non-viable trading data.
+          4. High-Frequency Trading (HFT): High-frequency trading practices are
+          not permitted.
           <br />
-          5. Independent Evaluation Protocol: Each trading evaluation must be
-          completed independently. Copying trades manually or using EAs from one
-          account to another, including from a master account to an evaluation
-          account, is strictly prohibited. This policy applies to both
-          individual trades and trading strategies.
+          5. Reverse Trading/Group Hedging: Strategies involving reverse trading
+          or group hedging are disallowed.
           <br />
-          6. Account Management After Evaluation: Upon successfully passing the
-          evaluation, you can manage up to $300,000 in funded accounts at Hera
-          Trading Capital. Please note you can scale your accounts to
-          $2,000,000, but please be aware your max starting allocation during
-          the funded phase is $300,000. You may also copy trades between your
-          funded account and one evaluation account. If you use a trade copier,
-          you must be able to verify ownership of both accounts involved in the
-          copying process.
-          <br /> RESTRICTED COUNTRIES
-          <br /> USA <br />
-          North Korea
-          <br /> Pakistan
-          <br /> Iran
+          6. Order Book Spamming: Manipulating the order book by spamming is
+          strictly prohibited.
+          <br />
+          <br />
+          Additionally, account management services are not allowed. All
+          accounts and trades must be conducted by the individual whose name is
+          on the account.
+          <br />
+          <br />
+          If you're uncertain about whether your EA or manual scalping strategy
+          is compliant, please reach out to us before you start trading. <br />
+          <br />
+          For traders aiming for a qualified analyst account up to $300,000, it
+          is critical to thoroughly understand these rules, objectives, and
+          requirements to maximize your success with us.
+          <br />
+          <br />
+          Order Book Spamming Defined
+          <br />
+          <br />
+          Order book spamming is a manipulative trading tactic where a trader
+          places a large number of orders in the order book to give the false
+          appearance of high market activity or certain price trends. This
+          practice aims to mislead other traders by creating artificial
+          pressure, potentially influencing their trading decisions.
+          <br />
+          <br />
+          Reasons for Prohibiting Order Book Spamming
+          <br />
+          <br />
+          1. Unfair Advantage: By using this tactic, traders can gain an unfair
+          edge over others, especially in a simulated environment where the
+          consequences are less immediate than in live trading. This undermines
+          both the fairness and the integrity of the trading platform. <br />
+          2. System Strain: Excessive orders put significant pressure on trading
+          platforms, leading to system delays, decreased performance, and
+          potential instability in market operations. This disrupts trading
+          efficiency for all users, resulting in slower response times and a
+          poorer experience overall.
+          <br />
+          <br />
+          Prohibiting order book spamming helps maintain a level playing field,
+          ensuring both market integrity and optimal system performance.
+          <br />
+          <br />
+          Consequences of Rule Violations
+          <br />
+          <br />
+          At Hera Trading Capital, we enforce strict measures to maintain a fair
+          and compliant trading environment. Violating any of our policies will
+          result in the following actions:
+          <br />
+          <br />
+          1. Immediate Termination: Hera Trading Capital reserves the right to
+          terminate your account and agreement immediately if any prohibited
+          trading practice is detected.
+          <br />
+          2. Forfeiture of Profits: Any profits generated through prohibited
+          practices will be considered void and will not be distributed.
+          <br />
+          3. Evaluation Review and Disqualification: All passed evaluations are
+          subject to review. Traders found in violation of our policies will not
+          be eligible to advance to the Qualified phase.
         </p>
       </div>
     </div>

@@ -1,5 +1,40 @@
 export const FaqsArray = [
   {
+    que: "What are prohibited trading strategies?",
+    ans: `For Hera Trading Capital, the following trading practices are strictly prohibited:<br/><br/>
+1. Unrealistic Trading Opportunities: This includes exploiting unrealistic prices or trade
+opportunities such as arbitrage, latency exploitation, front-running price feeds, or any
+mispricing tactics.<br/>
+2. Latency Trading: Trading based on latency advantages is not allowed.<br/>
+3. Arbitrage Trading: Engaging in arbitrage trading methods is prohibited.<br/>
+4. High-Frequency Trading (HFT): High-frequency trading practices are not permitted.<br/>
+5. Reverse Trading/Group Hedging: Strategies involving reverse trading or group
+hedging are disallowed.<br/>
+6. Order Book Spamming: Manipulating the order book by spamming is strictly prohibited.<br/><br/>
+Additionally, account management services are not allowed. All accounts and trades must be
+conducted by the individual whose name is on the account.<br/><br/>If you're uncertain about whether your EA or manual scalping strategy is compliant, please
+reach out to us before you start trading.<br/><br/>For traders aiming for a qualified analyst account up to $300,000, it is critical to thoroughly
+understand these rules, objectives, and requirements to maximize your success with us.<br/><br/>Order Book Spamming Defined<br/><br/>
+Order book spamming is a manipulative trading tactic where a trader places a large number of
+orders in the order book to give the false appearance of high market activity or certain price
+trends. This practice aims to mislead other traders by creating artificial pressure, potentially
+influencing their trading decisions.<br/><br/>Reasons for Prohibiting Order Book Spamming<br/>
+1. Unfair Advantage: By using this tactic, traders can gain an unfair edge over others,
+especially in a simulated environment where the consequences are less immediate than
+in live trading. This undermines both the fairness and the integrity of the trading platform.<br/>
+2. System Strain: Excessive orders put significant pressure on trading platforms, leading
+to system delays, decreased performance, and potential instability in market operations.
+This disrupts trading efficiency for all users, resulting in slower response times and a
+poorer experience overall.<br/><br/>Prohibiting order book spamming helps maintain a level playing field, ensuring both market
+integrity and optimal system performance.<br/><br/>At Hera Trading Capital, we enforce strict measures to maintain a fair and compliant trading
+environment. Violating any of our policies will result in the following actions:<br/>1. Immediate Termination: Hera Trading Capital reserves the right to terminate your
+account and agreement immediately if any prohibited trading practice is detected.<br/>
+2. Forfeiture of Profits: Any profits generated through prohibited practices will be
+considered void and will not be distributed.<br/>
+3. Evaluation Review and Disqualification: All passed evaluations are subject to review.
+Traders`,
+  },
+  {
     que: "Can I trade news?",
     ans: `Traders are free to place trades during news events across Phase 1 or Phase 2 of the
 evaluation for all account types offered. However, since our simulated platform tracks real-world
@@ -66,6 +101,17 @@ or widened spreads result in a rule violation, it will be the user's responsibil
 consequences`,
   },
   {
+    que: "Can I trade over the weekend?",
+    ans: `Users are permitted to hold simulated trades over the weekend for all evaluations, including
+Hera Trading Capital accounts. Since our simulated platform mirrors real market conditions,
+please be aware of the risks associated with market gaps when trading instruments that do not
+remain open during weekend trading hours, such as Forex pairs, Indices, and Commodities.<br/><br/>
+As a trader, it is your responsibility to evaluate the risks and rewards of holding positions
+overnight, as we do not impose restrictions on your trading strategy. However, if a gap, slippage,
+or widened spreads result in a rule violation, it will be the user's responsibility to manage any
+consequences.`,
+  },
+  {
     que: "Is there any Stop-loss rule?",
     ans: `We do not require the use of stop losses or take profits; their implementation is entirely at your
 discretion based on your trading strategy.<br/><br/>
@@ -80,7 +126,7 @@ To prevent deactivation, you must place at least one trade within the 90-day per
 This policy also applies to newly purchased accounts that have not had any trades placed.`,
   },
   {
-    que: "Available Trading Instruments?",
+    que: "What instruments are available to trade?",
     ans: `Users can trade a variety of instruments, including Forex, Energies, Commodities, Indices, and
 Cryptocurrencies, through our third-party partners and their respective trading platforms.`,
   },

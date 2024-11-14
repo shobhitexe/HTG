@@ -62,8 +62,8 @@ export default function page() {
           About Us
         </h1>
         <h2 className="text-AmericanSilver font-ClashGroteskLight sm:text-2xl text-lg max-w-5xl">
-          Something that only we can solve? Sure get in touch with us and we'll
-          guide you
+          {/* Something that only we can solve? Sure get in touch with us and we'll
+          guide you */}
         </h2>
       </div>
 

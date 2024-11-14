@@ -367,7 +367,7 @@ export default function Challenges() {
             {config.step !== 0 && (
               <>
                 <div className="flex items-center justify-between">
-                  <div>Max daily loss :</div>
+                  <div>Max Daily Loss (Static):</div>
                   <div className="text-RoyalOrange">5%</div>
                 </div>
                 <Seperator />
@@ -376,7 +376,9 @@ export default function Challenges() {
 
             <div className="flex items-center justify-between">
               <div>
-                {config.step === 0 ? "Max Total Drawdown :" : "Max loss :"}
+                {config.step === 0
+                  ? "Max Total Drawdown (Static):"
+                  : "Max Loss (Static):"}
               </div>
               <div className="text-RoyalOrange">
                 {/* {initialDrawdownArr[config.drawdown]} */}

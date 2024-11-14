@@ -1,4 +1,4 @@
-import { Button, buttonVariants, GoldenText, SilverText } from "@repo/ui";
+import { buttonVariants, GoldenText, SilverText } from "@repo/ui";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ const USPs = [
   { title: "Up to 100%", sub: "of Profit Split" },
   { title: "Up to $300k", sub: "Trading Accounts" },
   { title: "Add-Ons", sub: "to Enhance Trading" },
-  { title: "No Min", sub: "Trading Days" },
+  // { title: "No Min", sub: "Trading Days" },
 ];
 
 export default function Hero() {
@@ -66,10 +66,10 @@ export default function Hero() {
         />
       </div>
 
-      <div className="grid sm:grid-cols-4 grid-cols-2 justify-arounds relative md:-top-3 top-3">
-        {USPs.map((item, idx) => (
+      <div className="grid sm:grid-cols-3 grid-cols-2 justify-arounds relative md:-top-3 top-3">
+        {USPs.map((item) => (
           <div key={item.title} className="flex items-center justify-around">
-            {idx !== 0 && (
+            {/* {idx !== 0 && (
               <Image
                 src={"/images/hero/stroke.svg"}
                 alt={item.title}
@@ -77,7 +77,7 @@ export default function Hero() {
                 height={10}
                 className={`max-sm:hidden`}
               />
-            )}
+            )} */}
             <div className="flex flex-col items-center justify-center">
               <SilverText className="md:text-4xl sm:text-3xl text-2xl">
                 {item.title}
