@@ -3,6 +3,7 @@ import "./globals.css";
 import "@repo/ui/styles.css";
 import { Footer, Livechat, Navbar } from "@/components";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Hera Trading Capital",
@@ -133,6 +134,8 @@ export default function RootLayout({
             LiveChat
           </a>
         </noscript>
+
+        <GoogleAnalytics gaId="G-1GXLN31X27" />
       </head>
 
       <body>
