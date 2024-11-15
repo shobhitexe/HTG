@@ -512,6 +512,16 @@ export default function page() {
           be eligible to advance to the Qualified phase.
         </p>
       </div>
+
+      <div className="flex flex-col sm:gap-5 gap-1">
+        <GoldenText className={HeadingClass}>RESTRICTED COUNTRIES</GoldenText>
+        <p className="text-AmericanSilver font-ClashGroteskLight">
+          USA <br />
+          North Korea
+          <br /> Pakistan
+          <br /> Iran
+        </p>
+      </div>
     </div>
   );
 }

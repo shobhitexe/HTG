@@ -66,7 +66,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="grid sm:grid-cols-3 grid-cols-2 justify-arounds relative md:-top-3 top-3">
+      <div className="flex flex-wrap justify-around relative md:-top-3 top-3">
         {USPs.map((item) => (
           <div key={item.title} className="flex items-center justify-around">
             {/* {idx !== 0 && (

@@ -147,7 +147,7 @@ function Model() {
     <div className="flex flex-col w-full justify-center items-center sm:gap-10 gap-5">
       <Heading>How our Affiliate Model Works</Heading>
 
-      <div className="flex items-stretch justify-around w-[90%] sm:mt-10 overflow-x-auto">
+      <div className="flex items-stretch sm:justify-around w-[90%] sm:mt-10 overflow-x-auto">
         {affiliateConstants.affiliateModelArray.map((item, idx) => (
           <div
             key={item.title}
