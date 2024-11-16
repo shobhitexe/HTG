@@ -435,6 +435,9 @@ export default function Challenges() {
             >
               Get Started
             </Link>
+            <p className="text-sm">
+              *Please feel free to use any discounts codes upon checkout!
+            </p>
           </div>
         </div>
       </div>
