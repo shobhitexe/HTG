@@ -9,8 +9,8 @@ import {
 } from "@repo/ui";
 
 const statisticsArr = [
-  { title: "Total in payouts", sub: "9263 payouts", value: "$428,968" },
-  { title: "Payouts last month", sub: "263 payouts", value: "$126,968" },
+  { title: "Total Weekly Payouts", sub: "", value: "$14,985.7" },
+  { title: "Payouts last month", sub: "", value: "TBC" },
   { title: "Avg  payout time", sub: "", value: "48 Hours" },
   { title: "Avg payout amount", sub: "", value: "$1,498.57" },
 ];
@@ -99,7 +99,7 @@ export default function Payouts() {
 
         <div className="flex flex-col gap-5 sm:basis-2/3 max-sm:w-full">
           <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
-            Latest Payouts
+            Last Weeks Payouts
           </div>
 
           <Table className="text-center sm:text-lg text-base whitespace-nowrap rounded-3xl">
