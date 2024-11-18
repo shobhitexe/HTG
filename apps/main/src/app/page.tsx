@@ -8,6 +8,7 @@ import {
   Hero,
   HowItWorks,
   Leaderboard,
+  Payouts,
   Platform,
   TableComponent,
   WhyHera,
@@ -29,6 +30,7 @@ export default function Home() {
       {/* <EvalTable /> */}
       <FundingJourney />
       <HowItWorks />
+      <Payouts />
       <Community />
       <div className="mt-32" />
     </main>

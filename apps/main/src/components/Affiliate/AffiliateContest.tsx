@@ -61,7 +61,7 @@ export default function AffiliateContest() {
       <Table className="w-[80%] sm:mt-20 mt-10 mx-auto text-center sm:text-lg text-base whitespace-nowrap">
         <TableHeader>
           <TableRow className="bg-[#0A0A0A] rounded-t-xl">
-            {TableHeadings.map((item, idx) => (
+            {TableHeadings.map((item) => (
               <TableHead key={item}>
                 <div
                   key={item}
