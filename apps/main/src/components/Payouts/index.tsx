@@ -11,59 +11,59 @@ import {
 const statisticsArr = [
   { title: "Total in payouts", sub: "9263 payouts", value: "$428,968" },
   { title: "Payouts last month", sub: "263 payouts", value: "$126,968" },
-  { title: "Avg  payout time", sub: "", value: "10 Hours" },
-  { title: "Avg payout amount", sub: "", value: "$5,982" },
+  { title: "Avg  payout time", sub: "", value: "48 Hours" },
+  { title: "Avg payout amount", sub: "", value: "$1,498.57" },
 ];
 
 const TableData = [
   {
-    date: "45 Minutes ago",
-    account: "HTC Classic, $10,000",
-    amount: "$272",
+    date: "Monday",
+    account: "1 Step $10,000",
+    amount: "$207.93",
   },
   {
-    date: "1 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$812",
+    date: "Monday",
+    account: "1 Step $25,000",
+    amount: "$1071.82",
   },
   {
-    date: "1 Hour ago",
-    account: "200K Stellar 2-Step Stellar Account",
-    amount: "$1,268",
+    date: "Wednesday",
+    account: "1 Step $100,000",
+    amount: "$3231.75",
   },
   {
-    date: "2 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$1,663",
+    date: "Thursday",
+    account: "2 Step $5,000",
+    amount: "$241.89",
   },
   {
-    date: "5 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$1,923",
+    date: "Thursday",
+    account: "2 Step $10,000",
+    amount: "$535.67",
   },
   {
-    date: "5 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$1.923",
+    date: "Friday",
+    account: "2 Step $25,000",
+    amount: "$1261.85",
   },
   {
-    date: "5 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$158",
+    date: "Friday",
+    account: "2 Step $50,000",
+    amount: "$2912.18",
   },
   {
-    date: "8 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$406",
+    date: "Friday",
+    account: "1 Step $200,000",
+    amount: "$3000",
   },
   {
-    date: "11 Hour ago",
-    account: "HTC Classic, $10,000",
-    amount: "$1,934",
+    date: "Sunday",
+    account: "2 Step $10,000",
+    amount: "$344.13",
   },
 ];
 
-const TableHeadings = ["Date", "Account", "Amount"];
+const TableHeadings = ["Day", "Account", "Amount"];
 
 export default function Payouts() {
   return (

@@ -23,14 +23,17 @@ export default function Home() {
       {/* <Events /> */}
       <Leaderboard />
       <TableComponent />
-      <Challenges />
 
       <Platform />
+
+      <Challenges />
+
+      <Payouts />
 
       {/* <EvalTable /> */}
       <FundingJourney />
       <HowItWorks />
-      <Payouts />
+
       <Community />
       <div className="mt-32" />
     </main>
