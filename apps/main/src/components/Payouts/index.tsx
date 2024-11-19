@@ -67,7 +67,7 @@ const TableHeadings = ["Day", "Account", "Amount"];
 
 export default function Payouts() {
   return (
-    <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col gap-5 items-center px-5 text-center">
+    <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col sm:gap-20 gap-10 items-center px-5 text-center">
       <div className="flex sm:flex-row flex-col items-start justify-around lg:w-[90%] w-[95%] mx-auto md:gap-10 sm:gap-5 gap-10">
         <div className="flex flex-col gap-5 sm:basis-1/3 max-sm:w-full">
           <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
@@ -135,6 +135,16 @@ export default function Payouts() {
           </Table>
         </div>
       </div>
+
+      {/* <div className="flex flex-col">
+        <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
+          Payouts and Success Stories
+        </div>
+
+        <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
+          Stories for our community at Hera Trading Capital!
+        </div>
+      </div> */}
     </section>
   );
 }
