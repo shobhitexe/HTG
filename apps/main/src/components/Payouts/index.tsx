@@ -7,6 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@repo/ui";
+import Image from "next/image";
 
 const statisticsArr = [
   { title: "Total Weekly Payouts", sub: "", value: "$14,985.7" },
@@ -136,7 +137,7 @@ export default function Payouts() {
         </div>
       </div>
 
-      {/* <div className="flex flex-col">
+      <div className="flex flex-col justify-center items-center">
         <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
           Payouts and Success Stories
         </div>
@@ -144,7 +145,23 @@ export default function Payouts() {
         <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
           Stories for our community at Hera Trading Capital!
         </div>
-      </div> */}
+
+        <div className="flex items-center mt-10 flex-wrap justify-center gap-5">
+          {Array.from({ length: 5 }).map((_, idx) => {
+            return (
+              <div key={idx} className="bg-AmericanSilver/10 p-1 rounded-xl">
+                <Image
+                  src={`/images/payouts/${idx + 1}.webp`}
+                  width={480}
+                  height={480}
+                  alt="certi"
+                  className="rounded-xl"
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 }
