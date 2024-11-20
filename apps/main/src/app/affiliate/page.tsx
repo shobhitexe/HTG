@@ -4,7 +4,9 @@ import {
   CalculateEarnings,
   Community,
 } from "@/components";
+import { buttonVariants } from "@repo/ui";
 import Image from "next/image";
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export default function page() {
@@ -23,6 +25,17 @@ export default function page() {
           Become an affiliate for Hera Trading Capital and not only earn a
           commission, but also earn on your communities profitable trades!
         </h2>
+
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLScOPQ2Cwu6lh-8C6aBNxVu8IhQrNWhU6pNA5z6xkpHHni5PQw/viewform"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${buttonVariants({ variant: "bronze" })} mt-5`}
+        >
+          Become Affiliate
+        </Link>
       </div>
 
       <CalculateEarnings />
