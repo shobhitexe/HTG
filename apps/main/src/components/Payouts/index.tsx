@@ -8,6 +8,7 @@ import {
   TableRow,
 } from "@repo/ui";
 import Image from "next/image";
+import PayoutsCarousel from "./PayoutsCarousel";
 
 const statisticsArr = [
   { title: "Total Weekly Payouts", sub: "", value: "$14,985.7" },
@@ -69,9 +70,21 @@ const TableHeadings = ["Day", "Account", "Amount"];
 export default function Payouts() {
   return (
     <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col sm:gap-20 gap-10 items-center px-5 text-center">
+      <div className="flex flex-col justify-center items-center">
+        <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
+          Payouts and Success Stories
+        </div>
+
+        <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
+          Stories for our community at Hera Trading Capital!
+        </div>
+
+        <PayoutsCarousel />
+      </div>
+
       <div className="flex sm:flex-row flex-col items-start justify-around lg:w-[90%] w-[95%] mx-auto md:gap-10 sm:gap-5 gap-10">
         <div className="flex flex-col gap-5 sm:basis-1/3 max-sm:w-full">
-          <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
+          <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
             Statistics
           </div>
           <div className="flex flex-col gap-5 bg-rankCardBg relative md:p-12 p-5 rounded-2xl max-sm:rounded-lg">
@@ -83,14 +96,14 @@ export default function Payouts() {
                 className={`flex lg:flex-row flex-col max-sm:flex-row justify-between items-start lg:gap-10 sm:gap-5 ${idx !== 3 && "border-b border-[#363636] pb-7 max-md:pb-4"}`}
               >
                 <div className="flex flex-col text-left items-start">
-                  <div className="md:text-xl text-lg font-ClashGroteskSemiBold">
+                  <div className="md:text-xl sm:text-lg text-base font-ClashGroteskSemiBold">
                     {item.title}
                   </div>
-                  <GoldenText className="md:text-lg text-base font-ClashGroteskMedium">
+                  <GoldenText className="md:text-lg sm:text-base text-sm font-ClashGroteskMedium">
                     {item.sub}
                   </GoldenText>
                 </div>
-                <GoldenText className="md:text-3xl text-2xl font-semibold font-ClashGroteskMedium whitespace-nowrap">
+                <GoldenText className="md:text-3xl sm:text-2xl text-xl font-semibold font-ClashGroteskMedium whitespace-nowrap">
                   {item.value}
                 </GoldenText>
               </div>
@@ -99,7 +112,7 @@ export default function Payouts() {
         </div>
 
         <div className="flex flex-col gap-5 sm:basis-2/3 max-sm:w-full">
-          <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
+          <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
             Last Weeks Payouts
           </div>
 
@@ -134,32 +147,6 @@ export default function Payouts() {
               ))}
             </TableBody>
           </Table>
-        </div>
-      </div>
-
-      <div className="flex flex-col justify-center items-center">
-        <div className="font-Kugile text-Apricot sm:text-5xl text-4xl font-semibold">
-          Payouts and Success Stories
-        </div>
-
-        <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
-          Stories for our community at Hera Trading Capital!
-        </div>
-
-        <div className="flex items-center mt-10 flex-wrap justify-center gap-5">
-          {Array.from({ length: 5 }).map((_, idx) => {
-            return (
-              <div key={idx} className="bg-AmericanSilver/10 p-1 rounded-xl">
-                <Image
-                  src={`/images/payouts/${idx + 1}.webp`}
-                  width={480}
-                  height={480}
-                  alt="certi"
-                  className="rounded-xl"
-                />
-              </div>
-            );
-          })}
         </div>
       </div>
     </section>

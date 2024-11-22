@@ -28,8 +28,10 @@ import {
 } from "./Accordian";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 import { Slider } from "./Slider";
+import { cn } from "./lib/utils";
 
 export {
+  cn,
   Button,
   GoldenText,
   MailIcon,
