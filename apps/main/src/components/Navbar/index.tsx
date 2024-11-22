@@ -41,7 +41,7 @@ export default function Navbar() {
 
           <Link
             href={
-              "https://platform.heratradingcapital.com/register?demo=false&competitions=false"
+              "https://platform.heratradingcapital.com/dashboard"
             }
             target="_blank"
             rel="noopener noreferrer"
