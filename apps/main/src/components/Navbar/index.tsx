@@ -48,7 +48,7 @@ export default function Navbar() {
             className={`${buttonVariants({ variant: "bronze" })} z-20 text-black font-medium`}
             style={{ borderRadius: "999px" }}
           >
-            Get Started
+            Log In
           </Link>
         </div>
 
