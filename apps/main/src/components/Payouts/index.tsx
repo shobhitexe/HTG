@@ -7,61 +7,55 @@ import {
   TableHeader,
   TableRow,
 } from "@repo/ui";
-import Image from "next/image";
 import PayoutsCarousel from "./PayoutsCarousel";
 
 const statisticsArr = [
-  { title: "Total Weekly Payouts", sub: "", value: "$14,985.7" },
+  { title: "Total Weekly Payouts", sub: "", value: "$14,634.13" },
   { title: "Payouts last month", sub: "", value: "TBC" },
   { title: "Avg  payout time", sub: "", value: "48 Hours" },
-  { title: "Avg payout amount", sub: "", value: "$1,498.57" },
+  { title: "Avg payout amount", sub: "", value: "$1,626.01" },
 ];
 
 const TableData = [
   {
-    date: "Monday",
-    account: "1 Step $10,000",
-    amount: "$207.93",
-  },
-  {
-    date: "Monday",
+    date: "Thursday",
     account: "1 Step $25,000",
-    amount: "$1071.82",
+    amount: "$1175.33",
   },
   {
-    date: "Wednesday",
+    date: "Thursday",
+    account: "1 Step $50,000",
+    amount: "$2188.95",
+  },
+  {
+    date: "Friday",
     account: "1 Step $100,000",
-    amount: "$3231.75",
+    amount: "$3197.56",
   },
   {
-    date: "Thursday",
+    date: "Saturday",
     account: "2 Step $5,000",
-    amount: "$241.89",
+    amount: "$215.84",
   },
   {
-    date: "Thursday",
-    account: "2 Step $10,000",
-    amount: "$535.67",
-  },
-  {
-    date: "Friday",
+    date: "Saturday",
     account: "2 Step $25,000",
-    amount: "$1261.85",
-  },
-  {
-    date: "Friday",
-    account: "2 Step $50,000",
-    amount: "$2912.18",
-  },
-  {
-    date: "Friday",
-    account: "1 Step $200,000",
-    amount: "$3000",
+    amount: "$620.43",
   },
   {
     date: "Sunday",
-    account: "2 Step $10,000",
-    amount: "$344.13",
+    account: "2 Step $50,000",
+    amount: "$1417.65",
+  },
+  {
+    date: "Sunday",
+    account: "1 Step $200,000",
+    amount: "$2495.62",
+  },
+  {
+    date: "Sunday",
+    account: "1 Step $100,000",
+    amount: "$2882.99",
   },
 ];
 
@@ -76,7 +70,7 @@ export default function Payouts() {
         </div>
 
         <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
-          Stories for our community at Hera Trading Capital!
+          Stories from our community at Hera Trading Capital!
         </div>
 
         <PayoutsCarousel />

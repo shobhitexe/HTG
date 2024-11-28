@@ -29,10 +29,10 @@ const TableData = [
     FundedNext: "5%",
   },
   {
-    heading: "First Payout",
-    HeraTrading: "3 Days",
-    FTMO: "14 Days",
-    FundedNext: "30 Days",
+    heading: "Payout Processing Time",
+    HeraTrading: "48 Hours",
+    FTMO: "48 Hours",
+    FundedNext: "48 Hours",
   },
   {
     heading: "100K Price",

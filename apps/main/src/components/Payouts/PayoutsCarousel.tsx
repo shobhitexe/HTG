@@ -30,7 +30,7 @@ export default function PayoutsCarousel() {
                   width={480}
                   height={480}
                   alt="certi"
-                  className="rounded-xl mx-auto"
+                  className="rounded-xl mx-auto w-full"
                 />
               </div>
             </CarouselItem>

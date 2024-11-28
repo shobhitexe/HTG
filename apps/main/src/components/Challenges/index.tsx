@@ -405,6 +405,15 @@ export default function Challenges() {
             </div>
 
             <Seperator />
+
+            <div className="flex items-center justify-between">
+              <div>Minimum Trading Days :</div>
+              <div className="text-RoyalOrange">
+                {config.step === 0 ? "4 Days" : "No Minimum"}
+              </div>
+            </div>
+
+            <Seperator />
           </div>
 
           <Image
