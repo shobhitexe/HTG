@@ -8,6 +8,7 @@ import {
   TableRow,
 } from "@repo/ui";
 import PayoutsCarousel from "./PayoutsCarousel";
+import TestimonialsCarousel from "./TestimonialsCarousel";
 
 const statisticsArr = [
   { title: "Total Weekly Payouts", sub: "", value: "$14,634.13" },
@@ -72,6 +73,8 @@ export default function Payouts() {
         <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
           Stories from our community at Hera Trading Capital!
         </div>
+
+        <TestimonialsCarousel />
 
         <PayoutsCarousel />
       </div>
