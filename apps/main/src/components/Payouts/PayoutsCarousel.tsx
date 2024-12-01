@@ -15,7 +15,7 @@ export default function PayoutsCarousel() {
         loop: true,
         // dragFree: true,
       }}
-      className="mt-5 w-[80%] mx-auto"
+      className="mt-5 sm:w-[80%] w-[40%] mx-auto"
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, idx) => {

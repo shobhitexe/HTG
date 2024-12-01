@@ -67,7 +67,7 @@ export default function Payouts() {
     <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col sm:gap-20 gap-10 items-center px-5 text-center">
       <div className="flex flex-col justify-center items-center">
         <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
-          Payouts and Success Stories
+          Payouts and <br className="sm:hidden" /> Success Stories
         </div>
 
         <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">

@@ -374,7 +374,7 @@ export default function Challenges() {
               </>
             )}
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between text-left">
               <div>
                 {config.step === 0
                   ? "Max Total Drawdown (Static):"
@@ -406,7 +406,7 @@ export default function Challenges() {
 
             <Seperator />
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between text-left">
               <div>Minimum Trading Days :</div>
               <div className="text-RoyalOrange">
                 {config.step === 0 ? "4 Days" : "No Minimum"}
