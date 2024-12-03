@@ -172,7 +172,11 @@ export default function Challenges() {
         based on your experience level
       </div>
 
-      <div className="flex sm:flex-row flex-col items-stretch gap-5 w-full sm:px-10 xs:px-5 px-0 sm:mt-10 mt-5">
+      <div className="bg-leaderBorderHeaderGradient w-[90%] p-2 rounded-lg text-black">
+        30% Off
+      </div>
+
+      <div className="flex sm:flex-row flex-col items-stretch gap-5 w-full sm:px-10 xs:px-5 px-0 sm:mt-5 mt-5">
         <div className="text-left flex flex-col basis-3/4 gap-5 bg-[#0D0D0D] border border-white/10 rounded-2xl relative sm:p-10 p-5">
           <div className="absolute inset-x-0 h-px w-full mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-white/60 to-transparent" />
 
@@ -296,7 +300,7 @@ export default function Challenges() {
               <div className="flex flex-col gap-2">
                 <div>
                   <span className="font-ClashGroteskMedium text-RoyalOrange">
-                    5.
+                    4.
                   </span>{" "}
                   Select payout share:
                 </div>
@@ -324,19 +328,19 @@ export default function Challenges() {
           <div className="flex flex-col gap-3">
             <div className="text-xl">Price:</div>
             <div className="flex text-5xl gap-3">
-              {/* <div className="text-[#5A5A5A] relative">
+              <div className="text-[#5A5A5A] relative">
                 <div className="h-1 bg-[#FF0F0F] w-full absolute top-1/2 -rotate-12" />
                 <div>
                   {config.step === 0
-                    ? `$${Math.round(finalPrice * 1.3) - 8}`
-                    : `$${Math.round(finalPrice * 1.3)}`}
+                    ? `$${Math.round(finalPrice) - 8}`
+                    : `$${Math.round(finalPrice)}`}
                 </div>
-              </div> */}
+              </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
                 {config.step === 0
-                  ? `$${Math.ceil(finalPrice) - 8}`
-                  : `$${Math.ceil(finalPrice)}`}
+                  ? `$${(0.7 * (Math.ceil(finalPrice) - 8)).toFixed(0)}`
+                  : `$${(0.7 * Math.ceil(finalPrice)).toFixed(0)}`}
               </div>
             </div>
           </div>
