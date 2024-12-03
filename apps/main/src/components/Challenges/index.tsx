@@ -172,10 +172,6 @@ export default function Challenges() {
         based on your experience level
       </div>
 
-      <div className="bg-leaderBorderHeaderGradient w-[90%] p-2 rounded-lg text-black">
-        30% Off
-      </div>
-
       <div className="flex sm:flex-row flex-col items-stretch gap-5 w-full sm:px-10 xs:px-5 px-0 sm:mt-5 mt-5">
         <div className="text-left flex flex-col basis-3/4 gap-5 bg-[#0D0D0D] border border-white/10 rounded-2xl relative sm:p-10 p-5">
           <div className="absolute inset-x-0 h-px w-full mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-white/60 to-transparent" />
