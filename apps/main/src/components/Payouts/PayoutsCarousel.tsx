@@ -18,7 +18,7 @@ export default function PayoutsCarousel() {
       className="mt-5 sm:w-[80%] w-[40%] mx-auto"
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, idx) => {
+        {Array.from({ length: 8 }).map((_, idx) => {
           return (
             <CarouselItem
               key={idx}
