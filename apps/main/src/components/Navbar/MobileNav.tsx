@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { navLinks } from ".";
-import { Button, CrossIcon, MenuIcon } from "@repo/ui";
+import { buttonVariants, CrossIcon, MenuIcon } from "@repo/ui";
 import Link from "next/link";
 
 export default function MobileNav() {
@@ -63,6 +63,17 @@ export default function MobileNav() {
                 {link.title}
               </Link>
             ))}
+
+            <Link
+              className={`${buttonVariants({ variant: "bronze", size: "xl" })}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://platform.heratradingcapital.com/dashboard/guest-login"
+              }
+            >
+              Log In
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
