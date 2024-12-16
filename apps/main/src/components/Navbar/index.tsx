@@ -14,10 +14,10 @@ export const navLinks = [
 export default function Navbar() {
   return (
     <div className="fixed top-0 z-40 flex flex-col w-full">
-      <div className="bg-leaderBorderHeaderGradient w-full flex items-center justify-center gap-2 text-base max-sm:text-sm text-center z-50 p-2 rounded-lg text-black">
-        <span>30% OFF</span> <OfferSvg />
+      <div className="bg-leaderBorderHeaderGradients christmas bg-cristmasGradient w-full flex items-center justify-center gap-2 text-base max-sm:text-sm text-center z-50 p-2 rounded-lg text-black">
+        <span>50% OFF</span> <OfferSvg />
         <span>Limited Time</span> <OfferSvg />
-        <span>Code: LAUNCH30</span>
+        <span>Code: XMAS50</span>
       </div>
 
       <header className="mx-auto flex w-full items-center justify-between py-3 sm:px-10 px-5">
