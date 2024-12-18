@@ -1,6 +1,9 @@
+"use client";
+
 import { buttonVariants, GoldenText, SilverText } from "@repo/ui";
 import Image from "next/image";
 import Link from "next/link";
+import CountDown from "./Countdown";
 
 const USPs = [
   { title: "Up to 100%", sub: "of Profit Split" },
@@ -57,13 +60,17 @@ export default function Hero() {
           </div>
         </div>
 
-        <Image
-          src={"/images/hero/hero.webp"}
-          alt={"hero"}
-          width={650}
-          height={600}
-          className="relative md:-top-24 sm:-top-20 z-0 lg:w-[650px] md:w-[550px] sm:w-[400px] w-[450px] max-sm:mx-auto"
-        />
+        <div className="relative">
+          <Image
+            src={"/images/hero/hero.webp"}
+            alt={"hero"}
+            width={650}
+            height={600}
+            className="relative md:-top-24 sm:-top-20 z-0 lg:w-[650px] md:w-[550px] sm:w-[400px] w-[450px] max-sm:mx-auto"
+          />
+
+          <CountDown />
+        </div>
       </div>
 
       <div className="flex flex-wrap justify-around relative md:-top-3 top-3">

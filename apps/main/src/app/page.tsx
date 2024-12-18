@@ -21,7 +21,7 @@ export default function Home() {
       <Discord />
       <WhyHera />
       {/* <Events /> */}
-      <Leaderboard />
+      {/* <Leaderboard /> */}
       <TableComponent />
 
       <Platform />
