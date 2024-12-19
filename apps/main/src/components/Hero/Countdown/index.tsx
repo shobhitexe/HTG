@@ -15,11 +15,11 @@ const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
     return <div />;
   } else {
     return (
-      <div className="flex items-center ss:gap-5 xs:gap-1 flex-col">
-        <div className="bg-silverTextGradient bg-clip-text text-transparent text-[32px] indent-[30px]">
-          {/* Launching in */}
+      <div className="flex items-center flex-col bg-black p-3 rounded-lg">
+        <div className="sm:text-3xl xs:text-2xl text-xl">
+          XMAS50 Valid till:
         </div>
-        <div className="flex items-center sm:gap-3 xs:gap-2 gap-1 mt-6 justify-center">
+        <div className="flex items-center sm:gap-3 xs:gap-2 gap-1 justify-center">
           <CountDownCard value={days} type={"DAYS"} /> <SemiColon />
           <CountDownCard value={hours} type={"HOURS"} /> <SemiColon />
           <CountDownCard value={minutes} type={"MINUTES"} /> <SemiColon />
@@ -32,7 +32,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
 
 export default function CountDown() {
   return (
-    <div className="absolute sm:bottom-10 bottom-2 md:right-20 right-1/2 max-sm:translate-x-1/2">
+    <div className="absolute sm:bottom-10 bottom-1 md:right-20 right-1/2 max-sm:translate-x-1/2">
       <Countdown date={new Date(1735603200 * 1000)} renderer={renderer} />
     </div>
   );
