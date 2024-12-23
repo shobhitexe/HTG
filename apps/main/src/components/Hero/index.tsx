@@ -6,10 +6,10 @@ import Link from "next/link";
 import CountDown from "./Countdown";
 
 const USPs = [
-  { title: "Up to 100%", sub: "of Profit Split" },
-  { title: "Up to $300k", sub: "Trading Accounts" },
-  { title: "Add-Ons", sub: "to Enhance Trading" },
-  // { title: "No Min", sub: "Trading Days" },
+  { title: "No Consistency", sub: "Rules" },
+  { title: "Static", sub: "Drawdowns" },
+  { title: "Trade News", sub: "Freely" },
+  { title: "Enjoy No Minimum", sub: "Trading Days" },
 ];
 
 export default function Hero() {
