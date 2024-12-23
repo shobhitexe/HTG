@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-around relative md:-top-3 top-3">
+      <div className="flex flex-wrap justify-around relative md:-top-3 top-3 gap-5">
         {USPs.map((item) => (
           <div key={item.title} className="flex items-center justify-around">
             {/* {idx !== 0 && (
@@ -86,7 +86,7 @@ export default function Hero() {
               />
             )} */}
             <div className="flex flex-col items-center justify-center">
-              <SilverText className="md:text-4xl sm:text-3xl text-2xl">
+              <SilverText className="md:text-4xl sm:text-3xl ss:text-2xl xs:text-xl text-lg">
                 {item.title}
               </SilverText>
 
