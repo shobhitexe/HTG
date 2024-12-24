@@ -64,7 +64,7 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [59, 118, 228, 398, 691];
+  const basePrices = [59, 118, 228, 398, 699];
 
   const basePricesTwoStep = [37, 51, 140, 207, 360];
 
