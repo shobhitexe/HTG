@@ -6,7 +6,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 // import EvalTable from "../EvalTable";
 
-const balanceArr = ["$10,000", "$25,000", "$50,000", "$100,000", "$200,000"];
+const balanceArr = [
+  "$10,000",
+  "$25,000",
+  "$50,000",
+  "$100,000",
+  "$200,000",
+  "$300,000",
+];
 
 const balanceArrTwoStep = [
   "$5,000",
@@ -14,6 +21,8 @@ const balanceArrTwoStep = [
   "$25,000",
   "$50,000",
   "$100,000",
+  "$200,000",
+  "$300,000",
 ];
 
 const balanceArrThreeStep = [
@@ -51,7 +60,8 @@ const twoStepPriceArr = [
   [110, 123, 138],
   [220, 246, 278],
   [390, 437, 489],
-  [790, 885, 991],
+  [691, 760, 829],
+  [1224, 1346, 1468],
 ];
 
 export default function Challenges() {
@@ -64,9 +74,9 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [59, 118, 228, 398, 699];
+  const basePrices = [59, 118, 228, 398, 699, 1232];
 
-  const basePricesTwoStep = [37, 51, 140, 207, 360];
+  const basePricesTwoStep = [37, 51, 140, 207, 360, 691, 1224];
 
   const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
 
@@ -128,6 +138,8 @@ export default function Challenges() {
       return basePrices[balance] || 0;
     }
 
+    // console.log(drawdownStep);
+
     const basePrice =
       config.step === 0
         ? basePrices[balance] || 0
@@ -141,7 +153,11 @@ export default function Challenges() {
 
     const finalPriceOneStep = Math.ceil(basePrice + shareIncrement);
 
-    const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
+    const finalPriceTwoStep =
+      (twoStepPriceArr[balance]?.[shareStep] || 0) *
+      (drawdownStep === 0 ? 1 : drawdownStep * 1.1);
+
+    console.log(finalPriceTwoStep);
 
     // return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
     return config.step === 0 ? finalPriceOneStep : finalPriceTwoStep;
@@ -271,7 +287,7 @@ export default function Challenges() {
           </div>
           {config.step !== 0 && (
             <>
-              {/* <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2">
                 <div>
                   <span className="font-ClashGroteskMedium text-RoyalOrange">
                     4.
@@ -291,12 +307,12 @@ export default function Challenges() {
                     </Button>
                   ))}
                 </div>
-              </div> */}
+              </div>
 
               <div className="flex flex-col gap-2">
                 <div>
                   <span className="font-ClashGroteskMedium text-RoyalOrange">
-                    4.
+                    5.
                   </span>{" "}
                   Select payout share:
                 </div>
