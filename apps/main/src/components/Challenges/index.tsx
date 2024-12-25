@@ -64,6 +64,8 @@ const twoStepPriceArr = [
   [1224, 1346, 1468],
 ];
 
+const basePrices = [59, 118, 228, 398, 699, 1232];
+
 export default function Challenges() {
   const [config, setConfig] = useState<configType>({
     step: 0,
@@ -74,9 +76,11 @@ export default function Challenges() {
     share: 0,
   });
 
-  const basePrices = [59, 118, 228, 398, 699, 1232];
-
-  const basePricesTwoStep = [37, 51, 140, 207, 360, 691, 1224];
+  const [addons, setAddons] = useState({
+    "90Split": false,
+    "100Split": false,
+    NoMinimum: false,
+  });
 
   const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
 
@@ -134,33 +138,27 @@ export default function Challenges() {
     drawdownStep: number,
     shareStep: number
   ) {
+    const addons90Split = addons["90Split"] ? 1.095 : 1;
+    const addons100Split = addons["100Split"] ? 1.12 : 1;
+    const addonsNominimum = addons.NoMinimum ? 1.5 : 1;
+
     if (config.step === 0) {
-      return basePrices[balance] || 0;
+      return (
+        (basePrices[balance] || 0) *
+        addons90Split *
+        addons100Split *
+        addonsNominimum
+      );
     }
 
     // console.log(drawdownStep);
 
-    const basePrice =
-      config.step === 0
-        ? basePrices[balance] || 0
-        : config.step === 1
-          ? basePricesTwoStep[balance] || 0
-          : basePricesThreeStep[balance] || 0;
-
     // const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
 
-    const shareIncrement = calculateShareIncrement(balance, shareStep);
-
-    const finalPriceOneStep = Math.ceil(basePrice + shareIncrement);
-
-    const finalPriceTwoStep =
-      (twoStepPriceArr[balance]?.[shareStep] || 0) *
-      (drawdownStep === 0 ? 1 : drawdownStep * 1.1);
-
-    console.log(finalPriceTwoStep);
+    const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
 
     // return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
-    return config.step === 0 ? finalPriceOneStep : finalPriceTwoStep;
+    return finalPriceTwoStep * addons90Split * addons100Split * addonsNominimum;
   }
 
   const finalPrice = calculateFinalPrice(
@@ -168,6 +166,8 @@ export default function Challenges() {
     config.drawdown,
     config.share
   );
+
+  console.log(finalPrice);
 
   useEffect(() => {
     if (config.step === 0) {
@@ -287,7 +287,7 @@ export default function Challenges() {
           </div>
           {config.step !== 0 && (
             <>
-              <div className="flex flex-col gap-2">
+              {/* <div className="flex flex-col gap-2">
                 <div>
                   <span className="font-ClashGroteskMedium text-RoyalOrange">
                     4.
@@ -307,31 +307,83 @@ export default function Challenges() {
                     </Button>
                   ))}
                 </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <div>
-                  <span className="font-ClashGroteskMedium text-RoyalOrange">
-                    5.
-                  </span>{" "}
-                  Select payout share:
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  {payoutShareArr.map((item, idx) => (
-                    <Button
-                      key={idx}
-                      variant={idx === config.share ? "bronze" : "secondary"}
-                      onClick={() =>
-                        setConfig((prev) => ({ ...prev, share: idx }))
-                      }
-                    >
-                      {item}
-                    </Button>
-                  ))}
-                </div>
-              </div>
+              </div> */}
             </>
           )}
+
+          <div className="h-px bg-goldenButtonGradient" />
+
+          <GoldenText className="font-ClashGroteskMedium text-xl">
+            Addons
+          </GoldenText>
+
+          <div className="flex gap-2">
+            <div>
+              <span className="font-ClashGroteskMedium text-RoyalOrange">
+                4.
+              </span>{" "}
+              90% Profit Split:
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <input
+                type="checkbox"
+                className="cursor-pointer h-4 w-4 accent-[#FFB169]"
+                checked={addons["90Split"]}
+                onChange={(e) =>
+                  setAddons((prev) => ({
+                    ...prev,
+                    "90Split": e.target.checked,
+                    "100Split": false,
+                  }))
+                }
+              />
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <div>
+              <span className="font-ClashGroteskMedium text-RoyalOrange">
+                5.
+              </span>{" "}
+              100% Profit Split:
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              {" "}
+              <input
+                type="checkbox"
+                checked={addons["100Split"]}
+                className="cursor-pointer h-4 w-4 accent-[#FFB169]"
+                onChange={(e) =>
+                  setAddons((prev) => ({
+                    ...prev,
+                    "100Split": e.target.checked,
+                    "90Split": false,
+                  }))
+                }
+              />
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <div>
+              <span className="font-ClashGroteskMedium text-RoyalOrange">
+                6.
+              </span>{" "}
+              No Minimum Trading Days:
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              {" "}
+              <input
+                type="checkbox"
+                checked={addons.NoMinimum}
+                className="cursor-pointer h-4 w-4 accent-[#FFB169]"
+                onChange={(e) =>
+                  setAddons((prev) => ({
+                    ...prev,
+                    NoMinimum: e.target.checked,
+                  }))
+                }
+              />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col items-center basis-1/4 bg-[#0D0D0D] justify-around gap-5 border border-white/10 rounded-2xl relative p-10">
