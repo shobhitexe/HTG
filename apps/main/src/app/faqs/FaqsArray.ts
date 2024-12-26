@@ -257,4 +257,8 @@ Executing the same trades across multiple users constitutes a violation of our r
 exceed the maximum capital allocation per user.
 Can I use Expert Advisors when trading with a Hera Trading Account?`,
   },
+  {
+    que: "Are there any differences for giveaway winners?",
+    ans: `Our only difference for giveaway winners is they are expected to earn 0.5% profit per day for each of their minimum trading days`,
+  },
 ];
