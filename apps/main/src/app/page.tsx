@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* <EvalTable /> */}
       <FundingJourney />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
 
       <Community />
       <div className="mt-32" />
