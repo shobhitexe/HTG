@@ -362,28 +362,30 @@ export default function Challenges() {
               />
             </div>
           </div>
-          <div className="flex gap-2">
-            <div>
-              <span className="font-ClashGroteskMedium text-RoyalOrange">
-                6.
-              </span>{" "}
-              No Minimum Trading Days:
+          {config.step === 0 && (
+            <div className="flex gap-2">
+              <div>
+                <span className="font-ClashGroteskMedium text-RoyalOrange">
+                  6.
+                </span>{" "}
+                No Minimum Trading Days:
+              </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                {" "}
+                <input
+                  type="checkbox"
+                  checked={addons.NoMinimum}
+                  className="cursor-pointer h-4 w-4 accent-[#FFB169]"
+                  onChange={(e) =>
+                    setAddons((prev) => ({
+                      ...prev,
+                      NoMinimum: e.target.checked,
+                    }))
+                  }
+                />
+              </div>
             </div>
-            <div className="flex items-center gap-2 flex-wrap">
-              {" "}
-              <input
-                type="checkbox"
-                checked={addons.NoMinimum}
-                className="cursor-pointer h-4 w-4 accent-[#FFB169]"
-                onChange={(e) =>
-                  setAddons((prev) => ({
-                    ...prev,
-                    NoMinimum: e.target.checked,
-                  }))
-                }
-              />
-            </div>
-          </div>
+          )}
         </div>
 
         <div className="flex flex-col items-center basis-1/4 bg-[#0D0D0D] justify-around gap-5 border border-white/10 rounded-2xl relative p-10">

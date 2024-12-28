@@ -12,7 +12,7 @@ const Headings: Record<number, string> = {
   0: "General Trading Rules:",
   9: "General Questions",
   16: "Payouts",
-  23: "Giveaway Winners",
+  18: "Giveaway Winners",
 };
 
 export default function page() {

@@ -36,20 +36,10 @@ Traders`,
   },
   {
     que: "Can I trade news?",
-    ans: `Traders are free to place trades during news events across Phase 1 or Phase 2 of the
-evaluation for all account types offered. However, since our simulated platform tracks real-world
-market data, traders should be mindful of the risks associated with slippage during these
-high-volatility periods.<br/><br/>
-To clarify, trading during news events is not a violation of Hera Trading Capital's rules during the
-evaluation. However, traders must understand that slippage—just as in a live market—can
-occur, and it is the trader's responsibility if slippage results in a breach of the maximum loss
-limits.<br/><br/>
-Hera Trading Capital cannot guarantee profits during such high-risk events, nor can we prevent
-potential losses if a trade fails to execute as expected or results in slippage, impacting your
-simulated account's performance.<br/><br/>
-Our simulated platform mirrors real market conditions closely. Just as slippage is a natural risk
-in live trading, it is also present on our platform. For this reason, we recommend avoiding trades
-during major news events to mitigate risk.`,
+    ans: `Traders are permitted to trade during news events when purchasing a Step 1 or Step 2 account, they cannot trade news when purchasing an Instant Funded Accounts. Traders who reach funded on a Step 1 or Step 2 account are eligible for
+news trading<br/><br/>While news trading is not a violation of Hera Trading Capital's rules during the evaluation phase, it's important to note that our simulated platform closely mirrors real-world market conditions. This includes the possibility of slippage during
+high-volatility periods, just as in live trading.<br/><br/>Key Points to Keep in Mind:<br/><br/>● Slippage Risk: Slippage may occur during news events, potentially affecting trade execution and account performance.<br/>● Maximum Loss Limits: It is the trader's responsibility to manage risk effectively, as slippage could lead to breaching the maximum loss limits.
+<br/>● No Guarantees: Hera Trading Capital cannot guarantee profits or prevent losses during these high-risk periods.<br/><br/>For these reasons, while you are free to trade during news events, we recommend exercising caution and avoiding major news events to reduce potential risks.<br/><br/>Let us know if you have any additional questions or need further clarification!`,
   },
   {
     que: "Is copy trading allowed?",
@@ -91,25 +81,24 @@ Objectives and Rules are followed`,
   },
   {
     que: "Can I hold positions overnight?",
-    ans: `Users are permitted to hold simulated trades over the weekend for all evaluations, including
-Hera Trading Capital accounts. Since our simulated platform mirrors real market conditions,
-please be aware of the risks associated with market gaps when trading instruments that do not
-remain open during weekend trading hours, such as Forex pairs, Indices, and Commodities.<br/><br/>
-As a trader, it is your responsibility to evaluate the risks and rewards of holding positions
-overnight, as we do not impose restrictions on your trading strategy. However, if a gap, slippage,
-or widened spreads result in a rule violation, it will be the user's responsibility to manage any
-consequences`,
+    ans: `Users are permitted to hold simulated trades over the night for all evaluations, except if you are an Instant Funded
+Trader. Since our simulated platform mirrors real market conditions, please be aware of the risks associated with
+market gaps when trading instruments that do not remain open during weekend trading hours, such as Forex pairs,
+Indices, and Commodities.<br/><br/>As a trader, it is your responsibility to evaluate the risks and rewards of holding positions overnight, as we do not
+impose restrictions on your trading strategy. However, if a gap, slippage, or widened spreads result in a rule violation,
+it will be the user's responsibility to manage any consequences.<br/><br/>Please note:<br/><br/>The only exception to holding trades over the weekend is for Instant Funded accounts, all other accounts, no matter
+the stage, can hold weekend trades.The only exception to holding trades over the weekend is for Instant Funded accounts, all other accounts, no matter
+the stage, can hold weekend trades.`,
   },
   {
     que: "Can I trade over the weekend?",
-    ans: `Users are permitted to hold simulated trades over the weekend for all evaluations, including
-Hera Trading Capital accounts. Since our simulated platform mirrors real market conditions,
-please be aware of the risks associated with market gaps when trading instruments that do not
-remain open during weekend trading hours, such as Forex pairs, Indices, and Commodities.<br/><br/>
-As a trader, it is your responsibility to evaluate the risks and rewards of holding positions
-overnight, as we do not impose restrictions on your trading strategy. However, if a gap, slippage,
-or widened spreads result in a rule violation, it will be the user's responsibility to manage any
-consequences.`,
+    ans: `Users are permitted to hold simulated trades over the weekend, except if you are an Instant Funded Trader. Since our
+simulated platform mirrors real market conditions, please be aware of the risks associated with market gaps when
+trading instruments that do not remain open during weekend trading hours, such as Forex pairs, Indices, and
+Commodities.<br/><br/>As a trader, it is your responsibility to evaluate the risks and rewards of holding positions overnight, as we do not
+impose restrictions on your trading strategy. However, if a gap, slippage, or widened spreads result in a rule violation,
+it will be the user's responsibility to manage any consequences.<br/><br/>Please note:<br/><br/>The only exception to holding trades over the weekend is for Instant Funded accounts, all other accounts, no matter
+the stage, can hold weekend trades.`,
   },
   {
     que: "Is there any Stop-loss rule?",
@@ -195,67 +184,6 @@ Hedging across multiple accounts, including those under the same trader, is stri
 Opening opposing positions on the same asset goes against fair trading practices and
 compromises the platform's integrity. Violations of this policy may result in account suspension
 or termination. Refunds are not guaranteed and will be reviewed on a case-by-case basis.`,
-  },
-  {
-    que: "Can I use Expert Advisors (EAs) on my account?",
-    ans: `Yes, you can use Expert Advisors (EAs) on your account, but the same strategy cannot be
-executed by multiple users. To ensure fairness, each trader is allowed to use only one unique
-strategy. If we detect multiple users using the same EA, your account may be terminated.
-Refunds are not guaranteed and will be assessed on a case-by-case basis. Additionally, there is
-a server request limit of 2000 actions per day, including TP/SL modifications and order changes,
-with a maximum of 200 trades per day.`,
-  },
-  {
-    que: "What happens if I execute large trades without a strategy or proper risk management?",
-    ans: `Executing large trades without a clear strategy or ignoring essential market analysis and risk
-management principles is considered misuse of the simulated environment. This behavior will
-be penalized, as it does not represent genuine trading practices and leads to inaccurate trading
-data.<br/><br/>
-Independent Evaluation Protocol<br/>
-Each trading evaluation must be completed independently. It is strictly prohibited to copy trades,
-whether manually or using EAs, from one account to another, including transferring trades from
-a master account to an evaluation account. This policy applies to both individual trades and
-entire trading strategies.<br/><br/>
-Account Management After Evaluation<br/>
-After successfully passing the evaluation, you can manage up to $300,000 in funded accounts
-at Hera Trading Capital. You are also allowed to copy trades between your funded account and
-one evaluation account. If you use a trade copier, you must be able to verify ownership of both
-accounts involved in the copying process.`,
-  },
-  {
-    que: "Can I trade during news events?",
-    ans: `Yes, traders are allowed to place trades during news events across Phase 1 and Phase 2 of the
-evaluation for all account types at Hera Trading Capital. However, please be aware that our
-simulated platform closely tracks real-world market data, and news events often involve high
-volatility, increasing the risk of slippage.<br/><br/>
-Trading during news events does not violate Hera Trading Capital's evaluation rules. However,
-traders must understand that slippage—similar to live market conditions—can occur. Any
-slippage that leads to a breach of the maximum loss limits is the trader's responsibility.
-Hera Trading Capital cannot guarantee profits during these high-risk events, nor can we prevent
-potential losses if a trade fails to execute as expected or is impacted by slippage, affecting the
-performance of your simulated account.<br/><br/>
-As our platform mirrors live market conditions, we recommend exercising caution and
-considering the risks when trading during major news events to better manage potential losses.`,
-  },
-  {
-    que: "Is copy trading permitted?",
-    ans: `Trade Copying Policies:<br/>
-You are permitted to copy trades from your personal account, another account, or between
-multiple Hera Trading Capital accounts, including between your funded account and evaluation
-account, as long as these trades originate from your own accounts.<br/><br/>
-There is one important restriction:<br/>
-You cannot copy trades or utilize the same trading strategies across multiple Hera Trading
-Capital evaluation accounts. Each evaluation must be completed independently to uphold the
-integrity of the evaluation process.`,
-  },
-  {
-    que: "Can I copy trades or trade as a team?",
-    ans: `No, each trader is required to develop and utilize their own unique trading strategy. Team trading
-or copying trades on our simulated platform is not permitted. Each trader is eligible to create
-their own strategy with a starting balance of up to $300,000 in hypothetical funds.<br/><br/>
-Executing the same trades across multiple users constitutes a violation of our rules, as it would
-exceed the maximum capital allocation per user.
-Can I use Expert Advisors when trading with a Hera Trading Account?`,
   },
   {
     que: "Are there any differences for giveaway winners?",

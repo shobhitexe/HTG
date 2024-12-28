@@ -142,13 +142,20 @@ export default function Footer() {
             Risk Warning
           </div>
           <div className="text-footerPurple xs:text-sm text-xs">
-            Trading in the financial markets (in particular trading using margin
-            instruments) opens up wide opportunities and allows investors
-            willing to take the risk to earn high returns, but at the same time
-            carries a potentially high level of risk of loss. Therefore, before
-            starting a trade, you should comprehensively consider the issue of
-            the acceptability of conducting such operations from the point of
-            view of available financial resources and level of knowledge.
+            All information on this site is provided exclusively for educational
+            purposes related to trading in financial markets. It is not intended
+            to serve as specific investment advice, business recommendations,
+            investment opportunity analysis, or any general guidance regarding
+            the trading of financial instruments.
+            <br />
+            <br />
+            Please note that none of the services offered by Hera Trading
+            Capital are classified as investment services under applicable laws.
+            We do not provide guidance, instructions, or advice regarding
+            specific transactions or investment instruments. Additionally, our
+            employees and representatives are not authorized to offer investment
+            advice. Any information that may appear to be investment advice is
+            expressly disclaimed by Hera Trading Capital.
           </div>
         </div>
         <div className="border-Apricot/60 border-b"></div>
