@@ -17,6 +17,7 @@ import Navbar from "./Navbar";
 import PageHeading from "./PageHeading";
 import Payouts from "./Payouts";
 import Platform from "./Platform";
+import Popup from "./Popup";
 import TableComponent from "./Table";
 import WhyHera from "./WhyHera";
 
@@ -42,4 +43,5 @@ export {
   Platform,
   Livechat,
   Payouts,
+  Popup,
 };

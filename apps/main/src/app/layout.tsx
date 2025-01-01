@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "@repo/ui/styles.css";
-import { Footer, Livechat, Navbar } from "@/components";
+import { Footer, Livechat, Navbar, Popup } from "@/components";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -143,6 +143,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Livechat />
+        <Popup />
       </body>
     </html>
   );

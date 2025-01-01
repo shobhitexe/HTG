@@ -86,11 +86,11 @@ export default function Hero() {
               />
             )} */}
             <div className="flex flex-col items-center justify-center">
-              <SilverText className="md:text-4xl sm:text-3xl ss:text-2xl xs:text-xl text-lg">
+              <SilverText className="max-sm:text-xl text-3xl">
                 {item.title}
               </SilverText>
 
-              <div className="text-white/60 md:text-xl sm:text-lg text-base">
+              <div className="text-white/60 max-sm:text-base text-lg">
                 {item.sub}
               </div>
             </div>

@@ -512,9 +512,7 @@ export default function Challenges() {
               target="_blank"
               rel="noopener noreferrer"
               className={`text-black font-ClashGroteskSemiBold w-fit mx-auto ${buttonVariants({ variant: "bronze", size: "xl" })}`}
-            >
-              Get Started
-            </Link>
+            ></Link>
             <p className="text-sm">
               Please check <Terms /> for detailed info
             </p>

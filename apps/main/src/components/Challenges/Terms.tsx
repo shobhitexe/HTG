@@ -10,10 +10,11 @@ import {
 export default function Terms() {
   return (
     <Dialog>
-      <DialogTrigger className="underline">Terms of Use</DialogTrigger>
-      <DialogContent>
-        +
-        <DialogHeader style={{ backgroundColor: "#000000" }}>
+      <DialogTrigger className="underline">
+        Trading rules and behaviour
+      </DialogTrigger>
+      <DialogContent className="bg-black">
+        <DialogHeader>
           <DialogTitle>
             Trading Rules and Behaviour - Hera Trading Capital
           </DialogTitle>

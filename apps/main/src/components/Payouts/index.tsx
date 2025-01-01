@@ -69,13 +69,13 @@ export default function Payouts() {
           <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
             Statistics
           </div>
-          <div className="flex flex-col gap-5 bg-rankCardBg relative md:p-12 p-5 rounded-2xl max-sm:rounded-lg">
+          <div className="flex flex-col gap-1 bg-rankCardBg relative p-5 rounded-2xl max-sm:rounded-lg">
             <div className="absolute -top-px inset-x-0 w-2/3 mx-auto h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
 
             {statisticsArr.map((item, idx) => (
               <div
                 key={item.title}
-                className={`flex lg:flex-row flex-col max-sm:flex-row justify-between items-start lg:gap-10 sm:gap-5 ${idx !== 3 && "border-b border-[#363636] pb-7 max-md:pb-4"}`}
+                className={`flex lg:flex-row flex-col max-sm:flex-row justify-between items-start gap-5 ${idx !== 3 && "border-b border-[#363636] pb-3 max-md:pb-4"}`}
               >
                 <div className="flex flex-col text-left items-start">
                   <div className="md:text-xl sm:text-lg text-base font-ClashGroteskSemiBold">
