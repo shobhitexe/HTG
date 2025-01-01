@@ -406,8 +406,8 @@ export default function Challenges() {
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
                 {config.step === 0
-                  ? `$${(0.5 * (Math.ceil(finalPrice) - 8)).toFixed(0)}`
-                  : `$${(0.5 * Math.ceil(finalPrice)).toFixed(0)}`}
+                  ? `$${(0.75 * (Math.ceil(finalPrice) - 8)).toFixed(0)}`
+                  : `$${(0.75 * Math.ceil(finalPrice)).toFixed(0)}`}
               </div>
             </div>
           </div>

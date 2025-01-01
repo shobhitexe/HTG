@@ -12,6 +12,7 @@ export default function Terms() {
     <Dialog>
       <DialogTrigger className="underline">Terms of Use</DialogTrigger>
       <DialogContent>
+        +
         <DialogHeader style={{ backgroundColor: "#000000" }}>
           <DialogTitle>
             Trading Rules and Behaviour - Hera Trading Capital
