@@ -29,6 +29,14 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
 import { Slider } from "./Slider";
 import { cn } from "./lib/utils";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./Dialog";
 
 export {
   cn,
@@ -60,4 +68,10 @@ export {
   TabsList,
   TabsTrigger,
   Slider,
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 };

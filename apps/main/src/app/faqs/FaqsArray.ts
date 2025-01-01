@@ -31,8 +31,7 @@ environment. Violating any of our policies will result in the following actions:
 account and agreement immediately if any prohibited trading practice is detected.<br/>
 2. Forfeiture of Profits: Any profits generated through prohibited practices will be
 considered void and will not be distributed.<br/>
-3. Evaluation Review and Disqualification: All passed evaluations are subject to review.
-Traders`,
+3. Evaluation Review and Disqualification: All passed evaluations are subject to review.`,
   },
   {
     que: "Can I trade news?",

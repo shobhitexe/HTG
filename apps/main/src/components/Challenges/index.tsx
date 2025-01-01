@@ -4,6 +4,7 @@ import { Button, buttonVariants, GoldenText, Heading } from "@repo/ui";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Terms from "./Terms";
 // import EvalTable from "../EvalTable";
 
 const balanceArr = [
@@ -515,7 +516,7 @@ export default function Challenges() {
               Get Started
             </Link>
             <p className="text-sm">
-              *Please feel free to use any discounts codes upon checkout!
+              Please check <Terms /> for detailed info
             </p>
           </div>
         </div>
