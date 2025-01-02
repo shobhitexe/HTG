@@ -18,7 +18,7 @@ import Link from "next/link";
 export default function page() {
   return (
     <div className="flex flex-col justify-center items-center gap-10 sm:mt-40 mt-32 px-5">
-      <div className="bg-gradient-to-b from-[#BD793A] to-[#2F1600] rounded-2xl flex sm:flex-row flex-col items-center px-10 max-sm:px-5 pt-5">
+      <div className="bg-gradient-to-b from-[#BD793A] to-[#2F1600] rounded-2xl w-[90%] max-md:w-full justify-between flex sm:flex-row flex-col items-center px-10 max-sm:px-5 py-5">
         <div className="flex flex-col gap-3">
           <div className="sm:text-5xl text-4xl font-semibold">
             Over $42,000,000
