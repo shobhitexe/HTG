@@ -7,7 +7,11 @@ import {
   CarouselPrevious,
 } from "../Carousel";
 
-export default function PayoutsCarousel() {
+export default function PayoutsCarousel({
+  position = "home",
+}: {
+  position?: "home" | "payout";
+}) {
   return (
     <Carousel
       opts={{
@@ -15,7 +19,7 @@ export default function PayoutsCarousel() {
         loop: true,
         // dragFree: true,
       }}
-      className="mt-5 sm:w-[80%] w-[40%] mx-auto"
+      className={`mt-5 sm:w-[80%] ${position === "home" ? "w-[30%]" : "w-[80%]"} mx-auto`}
     >
       <CarouselContent>
         {Array.from({ length: 10 }).map((_, idx) => {

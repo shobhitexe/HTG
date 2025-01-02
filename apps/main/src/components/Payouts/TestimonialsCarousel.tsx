@@ -13,7 +13,11 @@ const testimonials = [
   "https://www.youtube.com/embed/Fo5YuBasYyU",
 ];
 
-export default function TestimonialsCarousel() {
+export default function TestimonialsCarousel({
+  position = "home",
+}: {
+  position?: "home" | "payout";
+}) {
   return (
     <Carousel
       opts={{
@@ -21,11 +25,11 @@ export default function TestimonialsCarousel() {
         loop: true,
         // dragFree: true,
       }}
-      className="mt-10 sm:w-[80%] xs:w-[50%] w-[45%] mx-auto rounded-xl"
+      className={`mt-10 sm:w-[80%] xs:w-[50%] ${position === "home" ? "w-[30%]" : "w-[80%]"} mx-auto rounded-xl`}
     >
       <CarouselContent>
         {testimonials.map((item) => (
-          <CarouselItem key={item} className="sm:basis-1/4 basis-1/3 mx-5">
+          <CarouselItem key={item} className="sm:basis-1/4 basis-1/2 mx-5">
             <iframe
               src={item}
               className="mx-auto rounded-xl sm:w-[290px] xs:w-[200px] w-[150px] sm:h-[515px] xs:h-[400px] h-[300px]"

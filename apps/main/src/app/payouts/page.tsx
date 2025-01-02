@@ -1,3 +1,7 @@
+import { Community } from "@/components";
+import { statisticsArr, TableData, TableHeadings } from "@/components/Payouts";
+import PayoutsCarousel from "@/components/Payouts/PayoutsCarousel";
+import TestimonialsCarousel from "@/components/Payouts/TestimonialsCarousel";
 import {
   buttonVariants,
   GoldenText,
@@ -8,69 +12,42 @@ import {
   TableHeader,
   TableRow,
 } from "@repo/ui";
-import PayoutsCarousel from "./PayoutsCarousel";
-import TestimonialsCarousel from "./TestimonialsCarousel";
+import Image from "next/image";
 import Link from "next/link";
 
-export const statisticsArr = [
-  { title: "Total Weekly Payouts", sub: "", value: "$4,405.04" },
-  { title: "Payouts last month", sub: "", value: "TBC" },
-  { title: "Avg  payout time", sub: "", value: "48 Hours" },
-  { title: "Avg payout amount", sub: "", value: "$881.00" },
-];
-
-export const TableData = [
-  {
-    date: "Tuesday",
-    account: "2 Step $10,000",
-    amount: "$428.99",
-  },
-  {
-    date: "Thursday",
-    account: "1 Step $10,000",
-    amount: "$162.49",
-  },
-  {
-    date: "Friday",
-    account: "1 Step $25,000",
-    amount: "$1033.54",
-  },
-  {
-    date: "Saturday",
-    account: "1 Step $50,000",
-    amount: "$2358.42",
-  },
-  {
-    date: "Sunday",
-    account: "2 Step $100,000",
-    amount: "$2726.56",
-  },
-];
-
-export const TableHeadings = ["Day", "Account", "Amount"];
-
-export default function Payouts() {
+export default function page() {
   return (
-    <section className="lg:mt-20 sm:mt-28 mt-20 flex flex-col sm:gap-20 gap-10 items-center px-5 text-center">
-      <div className="flex flex-col justify-center items-center">
-        <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
-          Payouts and <br className="sm:hidden" /> Success Stories
+    <div className="flex flex-col justify-center items-center gap-10 sm:mt-40 mt-32 px-5">
+      <div className="bg-gradient-to-b from-[#BD793A] to-[#2F1600] rounded-2xl flex sm:flex-row flex-col items-center px-10 max-sm:px-5 pt-5">
+        <div className="flex flex-col gap-3">
+          <div className="sm:text-5xl text-4xl font-semibold">
+            Over $42,000,000
+          </div>
+          <div className="sm:text-5xl text-4xl text-black font-semibold">
+            in earnings paid to HTC Traders.
+          </div>
+          <div className="max-w-md">
+            At Hera Trading Capital, we prioritize our traders by ensuring all
+            payouts are processed promptly and efficiently, reflecting our
+            commitment to transparency and reliability.
+          </div>
+          <div className="text-2xl">Trade, Learn, Earn with HTC.</div>
+          <Link
+            rel="noopener nofollow"
+            target="_blank"
+            href={"https://platform.heratradingcapital.com/dashboard"}
+            className={`${buttonVariants({ variant: "bronze", className: "w-fit" })}`}
+          >
+            Start Trading
+          </Link>
         </div>
 
-        <div className="text-center sm:text-xl text-base px-5 font-ClashGroteskRegular max-w-5xl">
-          Stories from our community at Hera Trading Capital!
-        </div>
-
-        <TestimonialsCarousel />
-
-        <PayoutsCarousel />
-
-        <Link
-          href={"/payouts"}
-          className={`${buttonVariants({ variant: "gold", size: "xl", className: "relative sm:-top-20 h-14 px-16" })}`}
-        >
-          See More
-        </Link>
+        <Image
+          src={"/images/payouts/hera.webp"}
+          alt={"hera"}
+          width={365.4}
+          height={346.5}
+        />
       </div>
 
       <div className="flex sm:flex-row flex-col items-start justify-around lg:w-[90%] w-[95%] mx-auto md:gap-10 sm:gap-5 gap-10">
@@ -140,6 +117,13 @@ export default function Payouts() {
           </Table>
         </div>
       </div>
-    </section>
+      <TestimonialsCarousel position="payout" />
+
+      <PayoutsCarousel position="payout" />
+
+      <div className="w-full mb-20">
+        <Community />
+      </div>
+    </div>
   );
 }
