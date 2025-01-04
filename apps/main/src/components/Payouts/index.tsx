@@ -13,37 +13,57 @@ import TestimonialsCarousel from "./TestimonialsCarousel";
 import Link from "next/link";
 
 export const statisticsArr = [
-  { title: "Total Weekly Payouts", sub: "", value: "$4,405.04" },
-  { title: "Payouts last month", sub: "", value: "TBC" },
+  { title: "Total Weekly Payouts", sub: "", value: "$14,152.39" },
+  { title: "Payouts last month", sub: "", value: "$4,405.04" },
   { title: "Avg  payout time", sub: "", value: "48 Hours" },
-  { title: "Avg payout amount", sub: "", value: "$881.00" },
+  { title: "Avg payout amount", sub: "", value: "$1572.48" },
 ];
 
 export const TableData = [
   {
-    date: "Tuesday",
+    date: "Monday",
     account: "2 Step $10,000",
-    amount: "$428.99",
+    amount: "$574.31",
+  },
+  {
+    date: "Tuesday",
+    account: "2 Step $25,000",
+    amount: "$1491.27",
+  },
+  {
+    date: "Wednesday",
+    account: "2 Step $50,000",
+    amount: "$2124.79",
+  },
+  {
+    date: "Thursday",
+    account: "1 Step $200,000",
+    amount: "$3000",
   },
   {
     date: "Thursday",
     account: "1 Step $10,000",
-    amount: "$162.49",
+    amount: "$199.74",
   },
   {
     date: "Friday",
     account: "1 Step $25,000",
-    amount: "$1033.54",
+    amount: "$1198.24",
+  },
+  {
+    date: "Friday",
+    account: "1 Step $50,000",
+    amount: "$2402.17",
   },
   {
     date: "Saturday",
-    account: "1 Step $50,000",
-    amount: "$2358.42",
+    account: "1 Step $100,000",
+    amount: "$3000",
   },
   {
     date: "Sunday",
-    account: "2 Step $100,000",
-    amount: "$2726.56",
+    account: "2 Step $5,000",
+    amount: "$161.87",
   },
 ];
 

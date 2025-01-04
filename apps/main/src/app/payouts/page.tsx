@@ -21,7 +21,7 @@ export default function page() {
       <div className="bg-gradient-to-b from-[#BD793A] to-[#2F1600] rounded-2xl w-[90%] max-md:w-full justify-between flex sm:flex-row flex-col items-center px-10 max-sm:px-5 py-5">
         <div className="flex flex-col gap-3">
           <div className="sm:text-5xl text-4xl font-semibold">
-            Over $42,000,000
+            Over $733,927
           </div>
           <div className="sm:text-5xl text-4xl text-black font-semibold">
             in earnings paid to HTC Traders.
