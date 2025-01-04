@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button, buttonVariants } from "@repo/ui";
+import { buttonVariants } from "@repo/ui";
 import MobileNav from "./MobileNav";
 
 export const navLinks = [
@@ -8,6 +8,7 @@ export const navLinks = [
   { title: "About Us", link: "/about-us" },
   { title: "Affiliate", link: "/affiliate" },
   { title: "FAQs", link: "/faqs" },
+  { title: "Payouts", link: "/payouts" },
   { title: "Contact Us", link: "/contact-us" },
 ];
 
