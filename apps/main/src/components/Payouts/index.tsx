@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export const statisticsArr = [
   { title: "Total Weekly Payouts", sub: "", value: "$14,152.39" },
-  { title: "Payouts last month", sub: "", value: "$4,405.04" },
+  { title: "Payouts last month", sub: "", value: "TBC" },
   { title: "Avg  payout time", sub: "", value: "48 Hours" },
   { title: "Avg payout amount", sub: "", value: "$1572.48" },
 ];

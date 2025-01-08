@@ -169,7 +169,8 @@ export default function Terms() {
                 <li>
                   1. Unrealistic Trading Opportunities: Exploiting unrealistic
                   prices or trade opportunities, such as arbitrage, latency
-                  exploitation, or front-running price feeds
+                  exploitation, All or Nothing (trading without proper risk
+                  management), or front-running price feeds
                 </li>
                 <li>
                   2. Latency Trading: Trading based on latency advantages.

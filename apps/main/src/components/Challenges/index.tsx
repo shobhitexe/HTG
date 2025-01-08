@@ -56,15 +56,7 @@ const payoutShareArr = [
   "100%",
 ];
 
-const twoStepPriceArr = [
-  [37, 41, 46],
-  [51, 57, 64],
-  [110, 123, 138],
-  [220, 246, 278],
-  [390, 437, 489],
-  [691, 760, 829],
-  [1224, 1346, 1468],
-];
+const twoStepPriceArr = [18, 37, 94, 187, 375, 751, 1125];
 
 const basePrices = [18, 37, 94, 187, 375, 751, 1125];
 
@@ -157,7 +149,8 @@ export default function Challenges() {
 
     // const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
 
-    const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
+    // const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
+    const finalPriceTwoStep = twoStepPriceArr[balance] || 0;
 
     // return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
     return finalPriceTwoStep * addons90Split * addons100Split * addonsNominimum;
