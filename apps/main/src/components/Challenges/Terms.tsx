@@ -47,9 +47,9 @@ export default function Terms() {
               <ul>
                 <li>● Profit Target: 9%</li>
                 <li>
-                  ● Minimum Trading Days: 4 Days (Each trade must achieve a
-                  minimum of 2.5% profit of the balance during these trading
-                  days.)
+                  ● Minimum Trading Days: 4 Days (Each trader much achieve a
+                  minimum of 0.75% profit on their balance for at least 3
+                  trading days)
                 </li>
                 <li>● Maximum Daily Loss (Static): 4%</li>
                 <li>● Maximum Loss (Static): 6%</li>

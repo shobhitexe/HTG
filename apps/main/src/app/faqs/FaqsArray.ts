@@ -3,7 +3,9 @@ export const FaqsArray = [
     que: "What are prohibited trading strategies?",
     ans: `For Hera Trading Capital, the following trading practices are strictly prohibited:<br/><br/>
 1. Unrealistic Trading Opportunities: This includes exploiting unrealistic prices or trade
-opportunities such as arbitrage, latency exploitation, front-running price feeds, or any
+opportunities such as arbitrage, latency exploitation All or
+Nothing (trading without proper
+risk management), front-running price feeds, or any
 mispricing tactics.<br/>
 2. Latency Trading: Trading based on latency advantages is not allowed.<br/>
 3. Arbitrage Trading: Engaging in arbitrage trading methods is prohibited.<br/>

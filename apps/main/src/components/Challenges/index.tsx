@@ -8,6 +8,7 @@ import Terms from "./Terms";
 // import EvalTable from "../EvalTable";
 
 const balanceArr = [
+  "$5,000",
   "$10,000",
   "$25,000",
   "$50,000",
@@ -65,7 +66,7 @@ const twoStepPriceArr = [
   [1224, 1346, 1468],
 ];
 
-const basePrices = [59, 118, 228, 398, 699, 1232];
+const basePrices = [18, 37, 94, 187, 375, 751, 1125];
 
 export default function Challenges() {
   const [config, setConfig] = useState<configType>({
@@ -399,17 +400,18 @@ export default function Challenges() {
                 <div className="h-1 bg-[#FF0F0F] w-full absolute top-1/2 -rotate-12" />
                 <div>
                   {config.step === 0
-                    ? `$${Math.round(finalPrice) - 8}`
-                    : `$${Math.round(finalPrice)}`}
+                    ? `$${(1.3 * Math.round(finalPrice)).toFixed(0)}`
+                    : `$${(1.3 * Math.round(finalPrice)).toFixed(0)}`}
                 </div>
               </div>
 
               <div className="bg-bronzeButtonGradient bg-clip-text text-transparent">
                 {config.step === 0
-                  ? `$${(0.75 * (Math.ceil(finalPrice) - 8)).toFixed(0)}`
-                  : `$${(0.75 * Math.ceil(finalPrice)).toFixed(0)}`}
+                  ? `$${Math.ceil(finalPrice).toFixed(0)}`
+                  : `$${Math.ceil(finalPrice).toFixed(0)}`}
               </div>
             </div>
+            <div className="text-sm">The world's best prices.</div>
           </div>
 
           <div className="flex flex-col gap-1.5 w-full">
@@ -418,11 +420,11 @@ export default function Challenges() {
               <div>Platform :</div> <div className="text-RoyalOrange">MTR</div>
             </div>
             <Seperator />
-            <div className="flex items-center justify-between">
+            {/* <div className="flex items-center justify-between">
               <div>Account Currency :</div>{" "}
               <div className="text-RoyalOrange">USD</div>
             </div>
-            <Seperator />
+            <Seperator /> */}
             <div className="flex items-center justify-between">
               <div>Balance :</div>
               <div className="text-RoyalOrange">
@@ -438,8 +440,8 @@ export default function Challenges() {
             {config.step !== 0 && (
               <>
                 <div className="flex items-center justify-between">
-                  <div>Max Daily Loss (Static):</div>
-                  <div className="text-RoyalOrange">5%</div>
+                  <div>Max Daily Loss (STATIC):</div>
+                  <div className="text-RoyalOrange">4%</div>
                 </div>
                 <Seperator />
               </>
@@ -448,12 +450,12 @@ export default function Challenges() {
             <div className="flex items-center justify-between text-left">
               <div>
                 {config.step === 0
-                  ? "Max Total Drawdown (Static):"
-                  : "Max Loss (Static):"}
+                  ? "Max Total Drawdown (STATIC):"
+                  : "Max Loss (STATIC):"}
               </div>
               <div className="text-RoyalOrange">
                 {/* {initialDrawdownArr[config.drawdown]} */}
-                {config.step === 0 ? "6%" : "11%"}
+                {config.step === 0 ? "5%" : "7%"}
               </div>
             </div>
             <Seperator />
@@ -461,9 +463,9 @@ export default function Challenges() {
               <div>Profit Target :</div>
               <div className="text-RoyalOrange">
                 {config.step === 0
-                  ? "9%"
+                  ? "10%"
                   : config.step === 1
-                    ? "8% / 5%"
+                    ? "9% / 6%"
                     : "10% / 4% / 4%"}
               </div>
             </div>
