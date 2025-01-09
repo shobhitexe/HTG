@@ -1,12 +1,12 @@
 import {
   buttonVariants,
-  GoldenText,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
+  // GoldenText,
+  // Table,
+  // TableBody,
+  // TableCell,
+  // TableHead,
+  // TableHeader,
+  // TableRow,
 } from "@repo/ui";
 import PayoutsCarousel from "./PayoutsCarousel";
 import TestimonialsCarousel from "./TestimonialsCarousel";
@@ -93,7 +93,7 @@ export default function Payouts() {
         </Link>
       </div>
 
-      <div className="flex sm:flex-row flex-col items-start justify-around lg:w-[90%] w-[95%] mx-auto md:gap-10 sm:gap-5 gap-10">
+      {/* <div className="flex sm:flex-row flex-col items-start justify-around lg:w-[90%] w-[95%] mx-auto md:gap-10 sm:gap-5 gap-10">
         <div className="flex flex-col gap-5 sm:basis-1/3 max-sm:w-full">
           <div className="font-Kugile text-Apricot sm:text-5xl xs:text-4xl text-3xl font-semibold">
             Statistics
@@ -159,7 +159,7 @@ export default function Payouts() {
             </TableBody>
           </Table>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

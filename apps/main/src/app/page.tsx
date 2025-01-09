@@ -1,6 +1,7 @@
 import {
   Challenges,
   Community,
+  CommunityDiscord,
   Discord,
   // EvalTable,
   // Events,
@@ -29,6 +30,8 @@ export default function Home() {
       <Challenges />
 
       <Payouts />
+
+      <CommunityDiscord />
 
       {/* <EvalTable /> */}
       <FundingJourney />

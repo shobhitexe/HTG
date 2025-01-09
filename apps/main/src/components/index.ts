@@ -3,6 +3,7 @@ import CalculateEarnings from "./Affiliate/CalculateEarnings";
 import { affiliateConstants } from "./Affiliate/constants";
 import Challenges from "./Challenges";
 import Community from "./Community";
+import CommunityDiscord from "./CommunityDiscord";
 import Discord from "./Discord";
 import EvalTable from "./EvalTable";
 import Events from "./Events";
@@ -44,4 +45,5 @@ export {
   Livechat,
   Payouts,
   Popup,
+  CommunityDiscord,
 };

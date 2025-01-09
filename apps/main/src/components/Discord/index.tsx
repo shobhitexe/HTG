@@ -1,4 +1,4 @@
-import { Button, buttonVariants, DiscordIcon } from "@repo/ui";
+import { buttonVariants, DiscordIcon } from "@repo/ui";
 import Link from "next/link";
 
 export default function Discord() {
