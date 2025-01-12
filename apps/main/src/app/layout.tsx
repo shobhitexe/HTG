@@ -115,12 +115,6 @@ export default function RootLayout({
           }}
         ></Script>
 
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=409900055291544&ev=PageView&noscript=1" />`,
-          }}
-        />
         <noscript>
           <a href="https://www.livechat.com/chat-with/18821934/" rel="nofollow">
             Chat with us

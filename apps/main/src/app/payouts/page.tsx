@@ -47,6 +47,7 @@ export default function page() {
           alt={"hera"}
           width={365.4}
           height={346.5}
+          className="relative -bottom-5"
         />
       </div>
 

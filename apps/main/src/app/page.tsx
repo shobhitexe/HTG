@@ -11,7 +11,7 @@ import {
   // Leaderboard,
   Payouts,
   Platform,
-  TableComponent,
+  // TableComponent,
   WhyHera,
 } from "@/components";
 
@@ -23,7 +23,7 @@ export default function Home() {
       <WhyHera />
       {/* <Events /> */}
       {/* <Leaderboard /> */}
-      <TableComponent />
+      {/* <TableComponent /> */}
 
       <Platform />
 
