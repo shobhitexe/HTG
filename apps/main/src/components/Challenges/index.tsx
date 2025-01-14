@@ -36,17 +36,17 @@ const balanceArrThreeStep = [
   "$300,000",
 ];
 
-const initialDrawdownArr = [
-  "8%",
-  "7%",
-  "8%",
-  "9%",
-  "10%",
-  "11%",
-  "12%",
-  "13%",
-  "14%",
-];
+// const initialDrawdownArr = [
+//   "8%",
+//   "7%",
+//   "8%",
+//   "9%",
+//   "10%",
+//   "11%",
+//   "12%",
+//   "13%",
+//   "14%",
+// ];
 const payoutShareArr = [
   // "40%", "50%",
   // "60%",
@@ -56,12 +56,12 @@ const payoutShareArr = [
   "100%",
 ];
 
-const twoStepPriceArr = [18, 37, 94, 187, 375, 751, 1125];
+// const twoStepPriceArr = [19, 37, 94, 187, 375, 751, 1125];
 
-const basePrices = [18, 37, 94, 187, 375, 751, 1125];
+const basePrices = [19, 37, 91, 183, 363, 725, 1087];
 
 export default function Challenges() {
-  const [config, setConfig] = useState<configType>({
+  const [config, setConfig] = useState({
     step: 0,
     accType: 0,
     platform: 0,
@@ -76,7 +76,7 @@ export default function Challenges() {
     NoMinimum: false,
   });
 
-  const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
+  // const basePricesThreeStep = [37, 85, 128, 220, 366, 540];
 
   // const drawdownIncrementArr = [2, 3.7, 7.7, 11.5, 20, 40.3];
 
@@ -150,7 +150,7 @@ export default function Challenges() {
     // const drawdownIncrement = calculateDrawdownIncrement(balance, drawdownStep);
 
     // const finalPriceTwoStep = twoStepPriceArr[balance]?.[shareStep] || 0;
-    const finalPriceTwoStep = twoStepPriceArr[balance] || 0;
+    const finalPriceTwoStep = basePrices[balance] || 0;
 
     // return Math.ceil(basePrice + drawdownIncrement + shareIncrement);
     return finalPriceTwoStep * addons90Split * addons100Split * addonsNominimum;
@@ -434,7 +434,7 @@ export default function Challenges() {
               <>
                 <div className="flex items-center justify-between">
                   <div>Max Daily Loss (STATIC):</div>
-                  <div className="text-RoyalOrange">4%</div>
+                  <div className="text-RoyalOrange">5%</div>
                 </div>
                 <Seperator />
               </>
@@ -448,7 +448,7 @@ export default function Challenges() {
               </div>
               <div className="text-RoyalOrange">
                 {/* {initialDrawdownArr[config.drawdown]} */}
-                {config.step === 0 ? "5%" : "7%"}
+                {config.step === 0 ? "6%" : "8%"}
               </div>
             </div>
             <Seperator />
