@@ -10,7 +10,7 @@ mispricing tactics.<br/>
 2. Latency Trading: Trading based on latency advantages is not allowed.<br/>
 3. Arbitrage Trading: Engaging in arbitrage trading methods is prohibited.<br/>
 4. High-Frequency Trading (HFT): High-frequency trading practices are not permitted.<br/>
-5. Reverse Trading/Group Hedging: Strategies involving reverse trading or group
+5. Reverse Trading Hedging: Strategies involving reverse trading or group
 hedging are disallowed.<br/>
 6. Order Book Spamming: Manipulating the order book by spamming is strictly prohibited.<br/><br/>
 Additionally, account management services are not allowed. All accounts and trades must be

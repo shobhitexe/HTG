@@ -169,6 +169,7 @@ export default function Challenges() {
       setConfig((prev) => ({ ...prev, share: 0, drawdown: 0 }));
     } else {
       setConfig((prev) => ({ ...prev, share: 0 }));
+      setAddons((prev) => ({ ...prev, NoMinimum: false }));
     }
   }, [config.step]);
 

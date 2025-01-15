@@ -183,7 +183,7 @@ export default function Terms() {
                   practices.
                 </li>
                 <li>
-                  5. Reverse Trading/Group Hedging: Strategies involving reverse
+                  5. Reverse Trading Hedging: Strategies involving reverse
                   trading or group hedging
                 </li>
                 <li>

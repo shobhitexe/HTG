@@ -444,8 +444,8 @@ export default function page() {
           4. High-Frequency Trading (HFT): High-frequency trading practices are
           not permitted.
           <br />
-          5. Reverse Trading/Group Hedging: Strategies involving reverse trading
-          or group hedging are disallowed.
+          5. Reverse Trading Hedging: Strategies involving reverse trading or
+          hedging are disallowed.
           <br />
           6. Order Book Spamming: Manipulating the order book by spamming is
           strictly prohibited.
