@@ -58,7 +58,7 @@ const payoutShareArr = [
 
 // const twoStepPriceArr = [19, 37, 94, 187, 375, 751, 1125];
 
-const basePrices = [19, 37, 91, 183, 363, 725, 1087];
+const basePrices = [19, 37, 91, 183, 305, 542, 787];
 
 export default function Challenges() {
   const [config, setConfig] = useState({
@@ -161,8 +161,6 @@ export default function Challenges() {
     config.drawdown,
     config.share
   );
-
-  console.log(finalPrice);
 
   useEffect(() => {
     if (config.step === 0) {
@@ -449,7 +447,7 @@ export default function Challenges() {
               </div>
               <div className="text-RoyalOrange">
                 {/* {initialDrawdownArr[config.drawdown]} */}
-                {config.step === 0 ? "6%" : "8%"}
+                {config.step === 0 ? (config.balance < 2 ? "4%" : "3%") : "8%"}
               </div>
             </div>
             <Seperator />
@@ -459,7 +457,7 @@ export default function Challenges() {
                 {config.step === 0
                   ? "10%"
                   : config.step === 1
-                    ? "9% / 6%"
+                    ? "8% / 5%"
                     : "10% / 4% / 4%"}
               </div>
             </div>
