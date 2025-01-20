@@ -58,7 +58,7 @@ const payoutShareArr = [
 
 // const twoStepPriceArr = [19, 37, 94, 187, 375, 751, 1125];
 
-const basePrices = [19, 37, 91, 183, 305, 542, 787];
+const basePrices = [19, 28, 65, 115, 195, 385, 765];
 
 export default function Challenges() {
   const [config, setConfig] = useState({
