@@ -455,7 +455,7 @@ export default function Challenges() {
                 {config.step === 0
                   ? "10%"
                   : config.step === 1
-                    ? "8% / 5%"
+                    ? "9% / 6%"
                     : "10% / 4% / 4%"}
               </div>
             </div>
