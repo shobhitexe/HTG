@@ -51,7 +51,7 @@ export default function Terms() {
                   minimum of 0.75% profit on their balance for at least 3
                   trading days)
                 </li>
-                <li>● Maximum Daily Loss (Static): 4%</li>
+                <li>● Maximum Daily Loss (Static): 3%</li>
                 <li>● Maximum Loss (Static): 6%</li>
                 <li>● Consistency Rules: None</li>
                 <li>● Rule Breaches: Not allowed</li>
@@ -86,11 +86,11 @@ export default function Terms() {
                 approach.
               </div>
               <ul>
-                <li>● Phase 1 Profit Target: 8%</li>
-                <li>● Phase 2 Profit Target: 5%</li>
+                <li>● Phase 1 Profit Target: 9%</li>
+                <li>● Phase 2 Profit Target: 6%</li>
                 <li>● Minimum Trading Days: None</li>
                 <li>● Maximum Daily Loss (Static): 5%</li>
-                <li>● Maximum Loss (Static): 11%</li>
+                <li>● Maximum Loss (Static): 8%</li>
                 <li>● Consistency Rules: None</li>
                 <li>● Rule Breaches: Not allowed</li>
               </ul>

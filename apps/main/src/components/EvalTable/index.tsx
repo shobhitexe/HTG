@@ -1,5 +1,5 @@
 import { Heading } from "@repo/ui";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@repo/ui";
+import { Tabs, TabsContent } from "@repo/ui";
 import HTCone from "./HTCone";
 import HTCPro from "./HTCPro";
 import { Dispatch, SetStateAction } from "react";

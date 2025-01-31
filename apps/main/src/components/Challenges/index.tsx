@@ -432,7 +432,7 @@ export default function Challenges() {
             <div className="flex items-center justify-between">
               <div>Max Daily Loss (STATIC):</div>
               <div className="text-RoyalOrange">
-                {config.step === 0 ? (config.balance < 2 ? "4%" : "3%") : "5%"}
+                {config.step === 0 ? (config.balance < 2 ? "3%" : "3%") : "5%"}
               </div>
             </div>
             <Seperator />
