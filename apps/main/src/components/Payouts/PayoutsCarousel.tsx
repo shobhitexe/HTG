@@ -22,7 +22,7 @@ export default function PayoutsCarousel({
       className={`mt-5 sm:w-[80%] ${position === "home" ? "w-[30%]" : "w-[80%]"} mx-auto`}
     >
       <CarouselContent>
-        {Array.from({ length: 10 }).map((_, idx) => {
+        {Array.from({ length: 9 }).map((_, idx) => {
           return (
             <CarouselItem
               key={idx}
