@@ -479,13 +479,13 @@ export default function Challenges() {
             <Seperator />
           </div>
 
-          <Image
+          {/* <Image
             src={"/images/hero/trustpilot-2.svg"}
             alt={"trustpilot"}
             width={300}
             height={100}
             className="mx-auto"
-          />
+          /> */}
 
           <div className="flex flex-col gap-5">
             {/* <div className="flex flex-col gap-2">

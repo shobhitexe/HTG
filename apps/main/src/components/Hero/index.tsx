@@ -20,13 +20,13 @@ export default function Hero() {
     >
       <div className="flex sm:flex-row flex-col justify-center">
         <div className="flex flex-col gap-3 max-sm:items-center max-sm:text-center">
-          <Image
+          {/* <Image
             src={"/images/hero/trustpilot.webp"}
             alt={"trustpilot"}
             width={400}
             height={20}
             className="md:w-[350px] sm:w-[250px] w-[200px]"
-          />
+          /> */}
           <GoldenText className="font-Kugile lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-semibold py-6 max-sm:py-3">
             Go Beyond your
             <br />
