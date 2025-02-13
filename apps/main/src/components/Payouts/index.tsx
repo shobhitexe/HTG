@@ -13,62 +13,62 @@ import TestimonialsCarousel from "./TestimonialsCarousel";
 import Link from "next/link";
 
 export const statisticsArr = [
-  { title: "Total Weekly Payouts", sub: "", value: "$9,382.41" },
+  { title: "Total Weekly Payouts", sub: "", value: "$31,994.02" },
   { title: "Payouts last month", sub: "", value: "TBC" },
   { title: "Avg  payout time", sub: "", value: "48 Hours" },
-  { title: "Avg payout amount", sub: "", value: "$938.24" },
+  { title: "Avg payout amount", sub: "", value: "$3199.40" },
 ];
 
 export const TableData = [
   {
     date: "Monday",
-    account: "2 Step $10,000",
-    amount: "$275.01",
-  },
-  {
-    date: "Tuesday",
-    account: "2 Step $25,000",
-    amount: "$844.16",
-  },
-  {
-    date: "Thursday",
-    account: "2 Step $50,000",
-    amount: "$1597.13",
-  },
-  {
-    date: "Thursday",
-    account: "2 Step $5,000",
-    amount: "$148.68",
-  },
-  {
-    date: "Friday",
-    account: "1 Step $100,000",
-    amount: "$2765.53",
-  },
-  {
-    date: "Friday",
     account: "1 Step $25,000",
-    amount: "$810.85",
+    amount: "$722.1",
   },
   {
-    date: "Sunday",
+    date: "Wednesday",
+    account: "1 Step $50,000",
+    amount: "$1739.56",
+  },
+  {
+    date: "Wednesday",
+    account: "1 Step $100,000",
+    amount: "$3558.3",
+  },
+  {
+    date: "Wednesday",
+    account: "1 Step $200,000",
+    amount: "$4804.11",
+  },
+  {
+    date: "Thursday",
     account: "2 Step $50,000",
-    amount: "$1483.64",
+    amount: "$1185.91",
+  },
+  {
+    date: "Saturday",
+    account: "1 Step $300,000",
+    amount: "$9350.68",
+  },
+  {
+    date: "Saturday",
+    account: "1 Step $300,000",
+    amount: "$8208.09",
   },
   {
     date: "Sunday",
     account: "2 Step $5,000",
-    amount: "$165.2",
+    amount: "$136.27",
   },
   {
     date: "Sunday",
     account: "2 Step $25,000",
-    amount: "$592.5",
+    amount: "$827.23",
   },
   {
     date: "Sunday",
-    account: "2 Step $25,000",
-    amount: "$699.71",
+    account: "2 Step $50,000",
+    amount: "$1461.77",
   },
 ];
 
