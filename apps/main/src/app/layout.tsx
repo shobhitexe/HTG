@@ -3,7 +3,7 @@ import "./globals.css";
 import "@repo/ui/styles.css";
 import { Footer, Livechat, Navbar } from "@/components";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Hera Trading Capital",
@@ -130,6 +130,7 @@ export default function RootLayout({
         </noscript>
 
         <GoogleAnalytics gaId="G-1GXLN31X27" />
+        <GoogleTagManager gtmId={"GTM-WNGT8CTL"} />
       </head>
 
       <body>
