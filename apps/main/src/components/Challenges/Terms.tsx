@@ -157,6 +157,48 @@ export default function Terms() {
             </div>
             <hr className="mt-5" />
             <div className="flex flex-col gap-5 mt-5">
+              <h1 className="text-lg">Bi-Weekly Payout Structure</h1>
+              <h2>
+                At Hera Trading Capital, we process payouts for our funded
+                traders on a bi-weekly basis. Traders can request their payout
+                starting on the 14th day from reaching funded status. However,
+                to ensure active and consistent trading, traders are expected to
+                generate at least{" "}
+                <strong>
+                  0.75% profit on their account balance for 7 out of the 14 days
+                </strong>{" "}
+                leading up to their payout request.{" "}
+                <strong>There is no cap on payout amounts</strong>, meaning
+                traders can withdraw as much profit as they have accumulated.
+                This policy applies equally to both{" "}
+                <strong>1-step and 2-step funded accounts.</strong>
+              </h2>
+
+              <strong>Why This Rule Is Necessary</strong>
+
+              <ul>
+                <li>
+                  <strong>Prevents One-Time Lucky Trades -</strong> By setting a
+                  condition for consistent profitability, this rule helps
+                  distinguish skilled traders from those who may have achieved a
+                  large profit from a single high-risk trade.
+                </li>
+                <li>
+                  <strong>Aligns with Prop Firm Standards -</strong> The
+                  top-tier prop firms have similar payout structures to maintain
+                  a sustainable model while keeping payouts frequent and fair
+                  for traders.
+                </li>
+                <li>
+                  <strong>Incentivizes Smart Risk Management -</strong> Traders
+                  who aim for steady returns rather than high-risk, high-reward
+                  strategies are more likely to succeed long-term, benefiting
+                  both the trader and the firm.
+                </li>
+              </ul>
+            </div>
+            <hr className="mt-5" />
+            <div className="flex flex-col gap-5 mt-5">
               <h1 className="text-lg">
                 Trading Strategies and Prohibited Activities
               </h1>

@@ -187,6 +187,21 @@ compromises the platform's integrity. Violations of this policy may result in ac
 or termination. Refunds are not guaranteed and will be reviewed on a case-by-case basis.`,
   },
   {
+    que: "How Does the Bi-Weekly Payout Structure Work?",
+    ans: `Bi-Weekly Payout Structure:<br/><br/>  At Hera Trading Capital, we process payouts for our funded
+          traders on a bi-weekly basis. Traders can request their payout
+          starting on the 14th day from reaching funded status. However,
+          to ensure active and consistent trading, traders are expected to
+          generate at least 0.75% profit on their account balance for 7 out of the 14 days
+          leading up to their payout request. There is no cap on payout amounts</strong>, meaning
+          traders can withdraw as much profit as they have accumulated.
+          This policy applies equally to both 1-step and 2-step funded accounts.<br/><br/> Why This Rule Is Necessary <br/><br/>
+          1) Prevents One-Time Lucky Trades - By setting a condition for consistent profitability, this rule helps
+          distinguish skilled traders from those who may have achieved a large profit from a single high-risk trade. <br/><br/>
+          2) Aligns with Prop Firm Standards - The top-tier prop firms have similar payout structures to maintain a sustainable model while keeping payouts frequent and fair for traders. <br/><br/>
+          3) Incentivizes Smart Risk Management - Traders who aim for steady returns rather than high-risk, high-reward strategies are more likely to succeed long-term, benefiting both the trader and the firm.`,
+  },
+  {
     que: "Are there any differences for giveaway winners?",
     ans: `Our only difference for giveaway winners is they are expected to earn 0.5% profit per day for each of their minimum trading days`,
   },
