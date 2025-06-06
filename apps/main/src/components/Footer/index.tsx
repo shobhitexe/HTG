@@ -80,7 +80,7 @@ export default function Footer() {
               Unit 5 Christy Court, Basildon, England, SS15 6TL
             </div>
           </div>
-          <div className="flex items-start flex-wrap lg:gap-32 sm:gap-10 gap-5">
+          {/* <div className="flex items-start flex-wrap lg:gap-32 sm:gap-10 gap-5">
             {footerLinks.map((footer) => (
               <div key={footer.title}>
                 <div className="text-xl pt-5 font-ClashGroteskMedium text-Apricot">
@@ -102,7 +102,7 @@ export default function Footer() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="border-Apricot/60 border-b"></div>
         <div className="flex ss:flex-row flex-col ss:items-center justify-between gap-5">
